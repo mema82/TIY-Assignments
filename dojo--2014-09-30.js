@@ -21,15 +21,14 @@ function add (a,b){
 if (a==="one" && b==="one")
 {return 2;}
   
-if (a==="two")
+ if (a==="two" && b==="two")
+{return 4;}
+  
+if (a=="two")
 {return 3;}
 
-if (b==="two")
-{return 4;}
 
 }
-
-
 
 
 console.log('it should add "one" and "one"',
@@ -38,4 +37,5 @@ console.log('it should add "two" and "one"',
 add ("two", "one")===3);
 console.log('it should add "two" and "two"',
 add ("two", "two")===4);
-
+console.log('it should add "three" and "two" ', 
+add("three" , "two")===5);
