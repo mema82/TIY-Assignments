@@ -1,4 +1,4 @@
-```var MouseEvent = function (mouse, event) {
+```javascript var MouseEvent = function (mouse, event) {
         var coords = {
             x: 0,
             y: 0
