@@ -23,11 +23,19 @@ if (a==="one" && b==="one")
   
 if (a==="two")
 {return 3;}
+
+if (b==="two")
+{return 4;}
+
 }
+
+
 
 
 console.log('it should add "one" and "one"',
 add  ("one" , "one")===2);
 console.log('it should add "two" and "one"',
 add ("two", "one")===3);
+console.log('it should add "two" and "two"',
+add ("two", "two")===4);
 
