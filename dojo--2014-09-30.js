@@ -34,6 +34,12 @@ if (a==="three" && b==="three")
 if (a==="three")
 {return 5;}
 
+if (a==="four" && b==="four")
+{return 8};
+
+if (a==="four" && b==="three")
+{return 7};
+
 
 }
 
@@ -47,3 +53,7 @@ console.log('it should add "three" and "two" ',
 add("three" , "two")===5);
 console.log('it should add "three" and "three"',
 add("three" , "three")===6);
+console.log('it should add "four" and "three"',
+add("four" , "three")===7);
+console.log('it should add "four" and "four"',
+add("four" , "four")===8);
