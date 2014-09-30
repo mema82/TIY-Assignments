@@ -10,16 +10,17 @@
             }
 ```
  
-* Variable: ` MouseEvent`
-* Conditional statement: `if`
+* Variable: `MouseEvent'
+* Conditional statement: `if'
 * value: `function (mouse, event)
  
 ~~~
  
  ``` var Mouse = function (element)
 ```
- *variable: ` Mouse`
+ *variable: ` Mouse'
  *value: `function  (element)
+ *Assingment Operator: `='
  
  ~~~
  
@@ -58,15 +59,16 @@
 ```var e = document.createEvent('CustomEvent');
 ```
 ```
-*variable: `e'
+*variable: 'e'
 *value: `custom Event`
+*Assignment operator: `='
 ```
 ```var KeyboardEvent = function (keyboard, event) {
         this.key = event.keyCode;
 ```
 ```
 *variable: `keyboard event`
-*value: `function`
+*value: 'this.key = event.keyCode'
 *Event: 'keyCode'
 ```
 
@@ -78,6 +80,7 @@
 ```
 *function: `toKeyCode`
 *conditional statement: `if`
+*strict equal operator: `=='
 ```
 ``` var Orientation = function () {
         pc.events.attach(this);
