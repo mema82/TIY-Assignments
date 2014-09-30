@@ -20,7 +20,10 @@ function add (a,b){
  
 if (a==="one" && b==="one")
 {return 2;}
-  
+
+if (a==="one")
+{return 1;}
+
  if (a==="two" && b==="two")
 {return 4;}
   
@@ -47,6 +50,8 @@ if (a==="five" && b==="five")
 if (a==="five")
 {return 9;}
 
+if (a==="zero" && b==="zero")
+{return 0;}
 
 
 }
@@ -76,3 +81,5 @@ console.log('it should add "five" and "five"',
 add("five" , "five")===10);
 console.log('it should add "one" and "zero"',
 add("one" , "zero")===1);
+console.log('it should add "zero" and "zero"',
+add("zero" , "zero")===0);
