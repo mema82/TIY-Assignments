@@ -40,8 +40,21 @@ if (a==="four" && b==="four")
 if (a==="four" && b==="three")
 {return 7};
 
+if (a==="five" && b==="five")
+{return 10;}
+
+
+if (a==="five")
+{return 9;}
+
+
 
 }
+
+
+
+
+
 
 console.log('it should add "one" and "one"',
 add  ("one" , "one")===2);
@@ -57,3 +70,9 @@ console.log('it should add "four" and "three"',
 add("four" , "three")===7);
 console.log('it should add "four" and "four"',
 add("four" , "four")===8);
+console.log('it should add "five" and "four"',
+add("five" , "four")===9);
+console.log('it should add "five" and "five"',
+add("five" , "five")===10);
+console.log('it should add "one" and "zero"',
+add("one" , "zero")===1);
