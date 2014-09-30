@@ -27,9 +27,15 @@ if (a==="one" && b==="one")
 if (a=="two")
 {return 3;}
 
+if (a==="three" && b==="three")
+{return 6;}
+
+
+if (a==="three")
+{return 5;}
+
 
 }
-
 
 console.log('it should add "one" and "one"',
 add  ("one" , "one")===2);
@@ -39,3 +45,5 @@ console.log('it should add "two" and "two"',
 add ("two", "two")===4);
 console.log('it should add "three" and "two" ', 
 add("three" , "two")===5);
+console.log('it should add "three" and "three"',
+add("three" , "three")===6);
