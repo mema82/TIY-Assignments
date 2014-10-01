@@ -1,89 +1,91 @@
 ```javascript
-1. var namedEmojiString;
+ var namedEmojiString;
 ```
 
-* Variable: `namedEmojiString`
+* Variable: 'namedEmojiString' = string
  
 ~~~
 
 ```javascript
-2. if (defaultConfig.ignore_emoticons);
+ var emojify = (function ()
 ```
 
-* Conditional Statement: `if`
+* variable: () = global variable
  
 ~~~
 
 ```javascript
-3. var document = typeof window !== 'undefined' && window.document;;
+ var document = typeof window !== 'undefined' && window.document;;
 ```
 
-* Variable: `document`
-* Value: Number 0
+* Variable: 'document'
+* Value: typeof window !== 'undefined' && window.document;
  
 ~~~
 
 ```javascript
-4. function isWhitespace(s) {
-                return s === ' ' || s === '\t';
+function isWhitespace(s) {
+    
 ```
 
-* Variable: `isWhitespace` `or`
-* 
+* function: `isWhitespace` 
+* variable: 's'
  
 ~~~
 
 ```javascript
-5. var count = 0;
+if (defaultConfig.ignore_emoticons)
 ```
 
-* Variable: `count`
-* Value: Number 0
+* condition: 'if'
+* statement: defaultConfig.ignore_emoticons
  
 ~~~
 
 ```javascript
-6. var count = 0;
+{
+return [emoticons[key], key];
+                });
 ```
 
-* Variable: `count`
-* Value: Number 0
+* syntax: 'block statement'
  
 ~~~
 
 ```javascript
-7. var count = 0;
+return s === ' ' || s === '\t' || s === '\r'
 ```
 
-* Variable: `count`
-* Value: Number 0
+* condition: || = 'Or'
+* Value: ' ' = 'whitespace'
  
 ~~~
 
 ```javascript
-8. var count = 0;
+if(match[1] && match[2]
 ```
 
-* Variable: `count`
-* Value: Number 0
+* condition: `if`
+* Value: 'array' ([ ])
+* operator: && (boolean)
  
 ~~~
 
 ```javascript
-9. var count = 0;
+var nodeList = [ ];
 ```
 
-* Variable: `count`
-* Value: Number 0
+* Variable: nodeList
+* Value: array 
  
 ~~~
 
 ```javascript
-10. var count = 0;
+!== null)
 ```
 
-* Variable: `count`
-* Value: Number 0
+* operator: `comparison' (!==)
+* Value: null
  
 ~~~
 
