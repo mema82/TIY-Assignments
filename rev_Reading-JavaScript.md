@@ -1,5 +1,5 @@
 ```javascript
-var namedEmojiString;
+1. var namedEmojiString;
 ```
 
 * Variable: `namedEmojiString`
@@ -7,7 +7,7 @@ var namedEmojiString;
 ~~~
 
 ```javascript
-if (defaultConfig.ignore_emoticons);
+2. if (defaultConfig.ignore_emoticons);
 ```
 
 * Conditional Statement: `if`
@@ -15,7 +15,7 @@ if (defaultConfig.ignore_emoticons);
 ~~~
 
 ```javascript
-var document = typeof window !== 'undefined' && window.document;;
+3. var document = typeof window !== 'undefined' && window.document;;
 ```
 
 * Variable: `document`
@@ -24,7 +24,7 @@ var document = typeof window !== 'undefined' && window.document;;
 ~~~
 
 ```javascript
-function isWhitespace(s) {
+4. function isWhitespace(s) {
                 return s === ' ' || s === '\t';
 ```
 
@@ -34,7 +34,7 @@ function isWhitespace(s) {
 ~~~
 
 ```javascript
-var count = 0;
+5. var count = 0;
 ```
 
 * Variable: `count`
@@ -43,7 +43,7 @@ var count = 0;
 ~~~
 
 ```javascript
-var count = 0;
+6. var count = 0;
 ```
 
 * Variable: `count`
@@ -52,7 +52,7 @@ var count = 0;
 ~~~
 
 ```javascript
-var count = 0;
+7. var count = 0;
 ```
 
 * Variable: `count`
@@ -61,7 +61,7 @@ var count = 0;
 ~~~
 
 ```javascript
-var count = 0;
+8. var count = 0;
 ```
 
 * Variable: `count`
@@ -70,7 +70,7 @@ var count = 0;
 ~~~
 
 ```javascript
-var count = 0;
+9. var count = 0;
 ```
 
 * Variable: `count`
@@ -79,10 +79,101 @@ var count = 0;
 ~~~
 
 ```javascript
-var count = 0;
+10. var count = 0;
 ```
 
 * Variable: `count`
 * Value: Number 0
  
 ~~~
+
+/*10 more (unique) examples and should include 
+conditionals, 
+loops, 
+and lists (arrays). /**
+
+
+
+```javascript
+11.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+12.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+13.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+14.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+15.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+16.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+17.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+18.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+19.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+20.
+```
+
+* Variable: 
+ 
+~~~
+
+
+
+
