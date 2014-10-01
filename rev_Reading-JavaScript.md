@@ -97,34 +97,37 @@ and lists (arrays). /**
 
 
 ```javascript
-11.
+for (var i = 3; i < match.length - 1; i++) 
 ```
 
-* Variable: 
+* statement: 'for loop'
  
 ~~~
 
 ```javascript
-12.
+function defaultReplacer(emoji, name)
 ```
 
-* Variable: 
+*function: 'defaultReplacer' = string
+* Value: array (emoji , name)
  
 ~~~
 
 ```javascript
-13.
+function success()
 ```
 
-* Variable: 
+* function: null ()
  
 ~~~
 
 ```javascript
-14.
+if(emojiName) {
+return replacer
 ```
 
-* Variable: 
+* condition: 'if'
+* statement: 'return'
  
 ~~~
 
