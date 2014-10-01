@@ -44,11 +44,10 @@ if (defaultConfig.ignore_emoticons)
 
 ```javascript
 {
-return [emoticons[key], key];
-                });
+for (var i = 3; i < match.length - 1; i++) 
 ```
 
-* syntax: 'block statement'
+* statement: for loop
  
 ~~~
 
@@ -92,42 +91,51 @@ var nodeList = [ ];
 /*10 more (unique) examples and should include 
 conditionals, 
 loops, 
-and lists (arrays). /**
+and lists (arrays) recognized from JS Roadtrip 1 and 2 /**
 
 
 
 ```javascript
-for (var i = 3; i < match.length - 1; i++) 
+10.
+
 ```
 
-* statement: 'for loop'
+* 
  
 ~~~
 
 ```javascript
-function defaultReplacer(emoji, name)
+11.
 ```
 
-*function: 'defaultReplacer' = string
-* Value: array (emoji , name)
+
  
 ~~~
 
 ```javascript
-function success()
+12.
 ```
 
-* function: null ()
+* 
  
 ~~~
 
 ```javascript
-if(emojiName) {
-return replacer
+13.
 ```
 
-* condition: 'if'
-* statement: 'return'
+* 
+ 
+~~~
+
+```javascript
+14.
+
+
+
+```
+
+* Variable: 
  
 ~~~
 
@@ -164,7 +172,7 @@ return replacer
 ~~~
 
 ```javascript
-19.
+19..
 ```
 
 * Variable: 
@@ -175,10 +183,8 @@ return replacer
 20.
 ```
 
-* Variable: 
+
  
 ~~~
-
-
 
 
