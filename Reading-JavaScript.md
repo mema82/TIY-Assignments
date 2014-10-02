@@ -1,96 +1,190 @@
-```javascript var MouseEvent = function (mouse, event) {
-        var coords = {
-            x: 0,
-            y: 0
-        };
-
-        if (event) {
-            if ( event instanceof MouseEvent) {
-                throw Error("Expected MouseEvent");
-            }
+```javascript
+ var namedEmojiString;
 ```
- 
-* Variable: `MouseEvent'
-* Conditional statement: `if'
-* value: `function (mouse, event)
+
+* Variable: 'namedEmojiString' = string
  
 ~~~
- 
- ``` var Mouse = function (element)
-```
- *variable: ` Mouse'
- *value: `function  (element)
- *Assingment Operator: `='
- 
- ~~~
- 
- ```Mouse.isPointerLocked =  function () {
-        return !!document.pointerLockElement;
-```
-```
-*function: 'return !!document.pointerLockElement'
 
+```javascript
+ var emojify = (function ()
+```
+
+* variable: () = global variable
+ 
 ~~~
 
-```var s = function () {
-                success();
-```
-```
-*variable: 's'
-*output: `success function
+```javascript
+ var document = typeof window !== 'undefined' && window.document;;
 ```
 
-```if (success) {
-                document.addEventListener('pointerlockchange', s, false);
-```
-```
-*condition: 'if'
-*event: 'pointerlockchange'
+* Variable: 'document'
+* Value: typeof window !== 'undefined' && window.document;
+ 
+~~~
 
-```function (button) {
-            return this._buttons[button];
-```
-
-```
-*function: 'button'
-*value: `return this._buttons[button]`
+```javascript
+function isWhitespace(s) {
+    
 ```
 
-```var e = document.createEvent('CustomEvent');
-```
-```
-*variable: 'e'
-*value: `custom Event`
-*Assignment operator: `='
-```
-```var KeyboardEvent = function (keyboard, event) {
-        this.key = event.keyCode;
-```
-```
-*variable: `keyboard event`
-*value: 'this.key = event.keyCode'
-*Event: 'keyCode'
+* function: `isWhitespace` 
+* variable: 's'
+ 
+~~~
+
+```javascript
+if (defaultConfig.ignore_emoticons)
 ```
 
-```function toKeyCode(s){
-        if (typeof(s) == "string") {
-            return s.toUpperCase().charCodeAt(0);
+* condition: 'if'
+* statement: defaultConfig.ignore_emoticons
+ 
+~~~
+
+```javascript
+{
+for (var i = 3; i < match.length - 1; i++) 
 ```
 
+* statement: for loop
+ 
+~~~
+
+```javascript
+return s === ' ' || s === '\t' || s === '\r'
 ```
-*function: `toKeyCode`
-*conditional statement: `if`
-*strict equal operator: `=='
+
+* condition: || = 'Or'
+* Value: ' ' = 'whitespace'
+ 
+~~~
+
+```javascript
+if(match[1] && match[2]
 ```
-``` var Orientation = function () {
-        pc.events.attach(this);
-    };
+
+* condition: `if`
+* Value: 'array' ([ ])
+* operator: && (boolean)
+ 
+~~~
+
+```javascript
+var nodeList = [ ];
 ```
+
+* Variable: nodeList
+* Value: array 
+ 
+~~~
+
+```javascript
+!== null)
 ```
-*variable: `orientation`
-*value: `pc.events.attach(this)
+
+* operator: `comparison' (!==)
+* Value: null
+ 
+~~~
+
+/*10 more (unique) examples and should include 
+conditionals, 
+loops, 
+and lists (arrays) recognized from JS Roadtrip 1 and 2 /**
+
+
+
+```javascript
+10.
+
+```
+
+* 
+ 
+~~~
+
+```javascript
+11.
 ```
 
 
  
+~~~
+
+```javascript
+12.
+```
+
+* 
  
+~~~
+
+```javascript
+13.
+```
+
+* 
+ 
+~~~
+
+```javascript
+14.
+
+
+
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+15.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+16.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+17.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+18.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+19..
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+20.
+```
+
+
+ 
+~~~
+
+
