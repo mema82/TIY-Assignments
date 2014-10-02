@@ -1,88 +1,190 @@
 ```javascript
-var namedEmojiString;
+ var namedEmojiString;
 ```
 
-* Variable: `namedEmojiString`
+* Variable: 'namedEmojiString' = string
  
 ~~~
 
 ```javascript
-if (defaultConfig.ignore_emoticons);
+ var emojify = (function ()
 ```
 
-* Conditional Statement: `if`
+* variable: () = global variable
  
 ~~~
 
 ```javascript
-var document = typeof window !== 'undefined' && window.document;;
+ var document = typeof window !== 'undefined' && window.document;;
 ```
 
-* Variable: `document`
-* Value: Number 0
+* Variable: 'document'
+* Value: typeof window !== 'undefined' && window.document;
  
 ~~~
 
 ```javascript
 function isWhitespace(s) {
-                return s === ' ' || s === '\t';
+    
 ```
 
-* Variable: `isWhitespace` `or`
+* function: `isWhitespace` 
+* variable: 's'
+ 
+~~~
+
+```javascript
+if (defaultConfig.ignore_emoticons)
+```
+
+* condition: 'if'
+* statement: defaultConfig.ignore_emoticons
+ 
+~~~
+
+```javascript
+{
+for (var i = 3; i < match.length - 1; i++) 
+```
+
+* statement: for loop
+ 
+~~~
+
+```javascript
+return s === ' ' || s === '\t' || s === '\r'
+```
+
+* condition: || = 'Or'
+* Value: ' ' = 'whitespace'
+ 
+~~~
+
+```javascript
+if(match[1] && match[2]
+```
+
+* condition: `if`
+* Value: 'array' ([ ])
+* operator: && (boolean)
+ 
+~~~
+
+```javascript
+var nodeList = [ ];
+```
+
+* Variable: nodeList
+* Value: array 
+ 
+~~~
+
+```javascript
+!== null)
+```
+
+* operator: `comparison' (!==)
+* Value: null
+ 
+~~~
+
+/*10 more (unique) examples and should include 
+conditionals, 
+loops, 
+and lists (arrays) recognized from JS Roadtrip 1 and 2 /**
+
+
+
+```javascript
+10.
+
+```
+
 * 
  
 ~~~
 
 ```javascript
-var count = 0;
+11.
 ```
 
-* Variable: `count`
-* Value: Number 0
+
  
 ~~~
 
 ```javascript
-var count = 0;
+12.
 ```
 
-* Variable: `count`
-* Value: Number 0
+* 
  
 ~~~
 
 ```javascript
-var count = 0;
+13.
 ```
 
-* Variable: `count`
-* Value: Number 0
+* 
  
 ~~~
 
 ```javascript
-var count = 0;
+14.
+
+
+
 ```
 
-* Variable: `count`
-* Value: Number 0
+* Variable: 
  
 ~~~
 
 ```javascript
-var count = 0;
+15.
 ```
 
-* Variable: `count`
-* Value: Number 0
+* Variable: 
  
 ~~~
 
 ```javascript
-var count = 0;
+16.
 ```
 
-* Variable: `count`
-* Value: Number 0
+* Variable: 
  
 ~~~
+
+```javascript
+17.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+18.
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+19..
+```
+
+* Variable: 
+ 
+~~~
+
+```javascript
+20.
+```
+
+
+ 
+~~~
+
+
