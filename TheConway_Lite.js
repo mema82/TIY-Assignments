@@ -3,7 +3,10 @@ var assert = require('assert'); //This is required to run the unit testing.
 function test(actual, expected, success){
     if (success === undefined) success = 'pass!';
     assert.strictEqual(actual, expected);
+    console.log(success)
 }
+
+       
 
 function conway(board, col, row){ //This gives the state of current cells.
 
