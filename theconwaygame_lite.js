@@ -23,7 +23,7 @@ var board= [
 
 var neighbors;
 
-function neighborsOf(board,x,y){
+function neighborsOf(board,col,row){
 
 if (x===0 && y===0){
     
@@ -76,11 +76,12 @@ return neighbors;
 var newCell;
 
 function conway(cell,neighbors){
+    
     var livingCell = 0;
     
 for (var i=0; i< neighbors.length; i++){
     
-if neighbors[i] === true)
+if (neighbors[i] === true)
 
 livingCell++;
 }
@@ -116,25 +117,7 @@ else{
 return newCell
 
 
-var actual = neighborsOf(board,0 , 0)
-var celltest = neighborsOf(board,cell 1, 0)
-var celltest = neighborsOf(board, 2, 0)
-var celltest = neighborsOf(board, 0,1 )
-var celltest=neighborsOf(board, 1,1)
-var celltest = neighborsOf(board 2,1)
-var celltest = neighborsOf(board, 0, 2)
-var celltest = neighborsOf(board, 1, 2)
-var celltest = neighborsOf(board, 2, 2)
 
-var con1test = conway(board[0][0] , actual)
-var con2test = conway(board[1][0] , con2test)
-var con3test = conway(board[2][0], con3test)
-var con4test = conway(board[0][1], con4test)
-var con5test = conway(board[1][1], con5test)
-var con6test = conway(board[2][1], cont6test)
-var con7test = conway(board[0][2], con7test)
-var con8test = conway(board[1][2], con8test)
-var con9test = conway(board[2][2], con9test)
 
 
 
