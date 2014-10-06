@@ -14,20 +14,19 @@ board =[
     ]
     ];       
 
-function conway(col, row){ //This gives the state of current cells.
+function conway(col, row){ //
 
-var cellState = board[col][row];
+var cellState = board[col][row];//gives state of cell whr given input values.
 
-var neighbors = neighborsOf(board,col,row); //This gives neighborsOf array a variable.
+var neighbors = neighborsOf(board,col,row); //input teh boards col and row to get list of neighbors.
 
-var liveNeighbors=0; //This starts counter at zero
 
 for ( i = 0; i < neighbors.length; i ++) {
     if (neighbors [i] === true)
     liveNeighbors++;
 } 
 
-if (cellState===true){ 
+if (cellState===true){ //These are the rules of conway.
 
 if (liveNeighbors < 2){
     return false;    
@@ -49,7 +48,7 @@ else{
     
     
 
-function neighborsOf(board,col,row){ 
+function neighborsOf(board,col,row){ //These are the individual index numbers
 
 if (col===0 && row===0){
     return [
@@ -108,41 +107,11 @@ if (col===1 && row===2) {
    }
 }
         
- //This tick function Should apply conways game of life rules and then returns a new board after each tick.
- 
-/* function tick(board){   //This array will hold updates values from board.
+
         
-    var newBoard = [ ]; 
-    
- for (var i = 0; i < board.length; i++){ //This will loop through board columns.
-  
-  for (var j = 0; j < board[i].length; j++){  //This will loop through board rows.
-  
-  }
- }
- }*/
-        
- //This reads my boards index for boolean values.   
+//This reads my boards index for boolean values.   
 console.log(board[0][0]);
 console.log(board[0][1]);
 console.log(board[0][2]);
 
 //
-
-
-
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
