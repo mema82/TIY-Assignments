@@ -76,7 +76,7 @@ if (a==='one' && b==='two' && c==='three' && d==='four')
 //console.log(myArray[1]); // Will output: one
 
 console.log('"1.23 cents: "',
-money('one','seven','five'));
+money('1.23'));
 console.log('"12.34 cents: "',
 money('one','two','three','four'));
 console.log('"123.45 cents: "',
