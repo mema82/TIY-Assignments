@@ -36,52 +36,15 @@ function test(actual, expected, success){
  * Make up your own, too.
  */
 
+function num2Words(money)
 
+var value = money.toString();  //This take the input value of (money) and converts it to a string using the (.toString) code
+value = Number(value).toFixed(2); //This takes the variable named value and applies a decimal point to the fixed values using (.toFixed)
+var cents = value.slice(-2); // This takes the numbers at the -2 place and holds it to be called on later. You can slice off at whatever point you want to specify in the parenthesis.
+ 
+var cents2Words = "dollars & " + cents + "/100s";  // This concatenates the num2Words value with the string("dollars") AND the variable(Cents) AND the string("/100s")
 
-var num2Lett = [ 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-//var lett2Num = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+//Create an array that holds the Word value that maps to the Number value
 
-
-function money(a,b,c,d,e,f){
-
-  if (a==='one' && b==='two' && c==='three' && d==='four' && e==='five' && f==='nine')
-    {return 'twelve million, three hundred fourty five thousand dollars ' + 'and ' + 90/100 + " cents";}
-
-
-
-  if (a==='one' && b==='two' && c==='three' && d==='four' && e==='five' && f==='six')
-    {return 'One thousand two hundred thirty four dollars ' + 'and ' + 56/100 + "cents";}
-
-
-
-  if (a==='one' && b==='two' && c==='three' && d==='four' && e==='five')
-    {return 'One hundred twenty three dollars ' + 'and ' + 45/100 + "cents";}
-
-
-  if (a==='one' && b==='two' && c==='three' && d==='four')
-    {return 'twelve dollars ' + 'and ' + 34/100 + "cents";}
-
-
-     if (a==="one" && b==="seven" && c==="five")
-
-{return 'One dollar ' + 'and ' + 23/100 + " cents";}
-
-if (a==='one' && b==='two' && c==='three' && d==='four')
-  {return 'twelve dollars' + 'and' + 34/100 + "cents";}
-
-}
-
-
-
-//console.log(myArray[1]); // Will output: one
-
-console.log('"1.23 cents: "',
-money('1.23'));
-console.log('"12.34 cents: "',
-money('one','two','three','four'));
-console.log('"123.45 cents: "',
-money('one','two','three','four','five'));
-console.log('"1234.56 cents: "',
-money('one','two','three','four','five','six'));
-console.log('"12,345,678.90 cents: "',
-money('one','two','three','four','five','nine'));
+var one = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve",
+"thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
