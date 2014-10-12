@@ -1,128 +1,158 @@
 var expect = require('chai').expect;
 
-// This holds the value for the 3 required parameters to be passed
+//Initial Board State
 
-var cell = function(board,row,col){
-    var cell = this;
-    this.status = false;
-    this.row = row;
-    this.col = col;
-    this.distance = function(cell){
+var board = [
+    [ false,false,false ],
+    [ false,false,false ],
+    [ false,false,false ],
+         ]
         
+//Checks Neighbors to see if cell state is dead or alive
+
+
+var cellstate = false;
+function conway(cell,neighbors) {
+    var liveCells = 0;
+    neighbors.forEach(function(value, index) {
+        if (value === true) {
+            liveCells++;
+        }
+    
+    if (cell === true) {
+        if (liveCells < 2) {
+            cellstate = false;
+        }
         
-// This returns my absolute numeber from the arguement and adds it to the absolute number of the second arguement. 
-        
-        return Math.abs(cell.row - this.col) + Math.abs(cell.row - this.row); 
-    };
+    else if (liveCells < 4) {
+        cellstate= true;
     }
-// This initiates my counter
-
-this.neighborsOf = 0;
-
-/*This checks for my neighbors state and uses the filter function
-This assigns the neighbors
-function that accepts up to three arguments. 
-The filter method calls the callbackfn function 
-one time for each element in the array*/
-
-this.cellstate = function(){
-    
-    return this.neighborsOf.filter(function(cell){
-        
-        return cell.status;
+    else if (liveCells > 3) {
+        cellstate = false;
     }
-).length;
-};
-
-return this;
-
-// This reps the the new board
-
-var board = function(w,h){
     
-    var board = this;
-    var col = newBoard(w*h);
-
-    var live = [];
-    
-for(var i = 0; i < w; i++){
-    for(var J = 0; j < h; j++){
-        (function(){
-            col[i+j*w] = new cell(i, j, col);
-        });
-    }
-};
-
-
-col.forEach(function(cell){
-    cell.neighborsOf = col.filter(function(cell2){
-var dx = Math.abs(cell2.board - cell.board);
-var dy = Math.abs(cell2.row - cell.row);
-    
-    return (dx === 1 && dy === 1) || (dx === 1 && dy === 0) || (dx === 0 && dy === 1);
-    });
-});
-
-this.filter = function(cellnum){
-    
-    return col.filter(cellnum);
-};
-
-this.newLife = function(){
-
-// Rule # 3: Any live cell with more than three live neighbours dies, as if by overcrowding
-    var deadOp = col.filter(function(cell){
-        
-        return cell.status && (cell.neighborsOf() > 3);
-    });
-    
-// Rule # 1: ny live cell with fewer than two live neighbours dies, as if caused by under-population
-    var deadUp = col.filter(function(cell){
-        
-        return col.status && (cell.neighborsOf() < 2);
-    })
-        
+else {
+    if (liveCells === 3) {
+        cellstate= true;
+}
+else { cellstate = false;
 }
 
-// Rule #4: Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction
-var liveRep = col.filter(function(cell){
-    
-    return !cell.status && cell.neighborsOf() === 3;
-});
-
-//Rule # 2: ny live cell with two or three live neighbours lives on to the next generation
-
-var nextGen = col.filter(function(cell){
-    
-    return cell.status && (cell.neighborsOf() === 2 || cell.neighborsOf() === 3);
-});
-// This concat prototype returns new array along with the array provided in arguement
-deadOp.concat(deadOp).forEach(function(cell){
-    
-    cell.status = false;
-
-});
-
-liveRep.forEach(function(cell){
-    
-    cell.status = true;
-    
-});
-
-nextGen.forEach(function(cell){
-    
-    cell.status = true;
-    
-});
-
-this.getCell = function(row,col){
-    
-    return col[x+y*w];
-};
-
-return this;
+    return cellstate;
 }
 
-it('result should be false,')
-expect(cell.this.status).to.be.a('false');
+//Declares the neighbors of a cell
+
+var neighbors = [];
+function neighborsOf(board, x, y) {
+    if (x === 0 && y === 0) {
+        neighbors - [board[0][1], board[1][0], board[1][1]]
+    }
+
+    if (x === 0 && y === 1) {
+        neighbors = [board[0][0] ,board [1][0], board[1][1], board[1][2],board[0][2]]
+    }
+ 
+  if (x === 0 && y === 2) {
+      neighbors = [board[0][1],board[1][1],board[1][2]]
+  }
+        
+  if (x === 1 && y === 1) {
+      neighbors = [board[0][0], board[1][0], board[2][0], board[0][1], board[2][1], board[0][2], board[1][2], board[2][2]]
+  }
+  
+  if (x === 1 && y === 2) {
+      neighbors = [board[0][1], board[0][2], board[1][1], board[2][1],board[2][2]] 
+  }
+        
+   if (x === 2 && y === 0) {
+       neighbors = [board[1][0],board[1][1],board[2][1]]
+   }    
+        
+    if (x === 2 && y === 1) {
+        neighbors= [board[2][0], board[1][0],board[1][1],board[1][2], board[2][2]]
+    }
+ 
+    if (x === 2 && y === 1) {
+        neighbors = [board[2][0], board[1][0],board[1][1],board[1][2],board[2][2]]
+        
+    }
+    
+    if (x === 2 & y === 2) {
+        neighbors = [board[2][1],board[1][1],board[1][2]]
+    }
+    
+    return neighbors;
+    
+}
+
+neighbors.forEach(conway);
+
+//TICK function to generate board of new arrays
+
+function tick(board) {
+    var newBoard = [];
+    
+  board.forEach(function(value, index) {
+      value.forEach(function(x,y) {
+          
+    newBoard.push(conway(board[index][y], neighborsOf(board, index, y)));
+    
+  });
+
+});
+
+var row1 = newBoard.splice(0,3);
+var row2 = newBoard.splice(0,3);
+board = [row1, row2, newBoard];
+
+    return board;
+}
+
+//Testing
+var assert = require("assert");
+
+function test(actual, expected, success) {
+    
+    if (success === undefined) success = 'Success!'; 
+        
+    assert.strictEqual(actual, expected);
+    console.log(success);
+}
+
+ function ticktest(board) {
+   var after = tick(board)
+   console.log("-----------------------");
+   console.log("-----------------------");
+   console.log("-----------------------");
+
+                    }
+                }
+            })
+        };
+// TEST FUNCTION
+var assert = require('assert');
+
+function test(actual, expected, success){
+    if (success === undefined) success = 'Success!';
+    assert.strictEqual(actual, expected);
+    console.log(success);
+}
+
+//Tick Board test
+function tick_test(board) {
+  var after = tick(board)
+  console.log("-----------------------");
+  console.log(board);
+  console.log("-----------------------");
+  console.log(after);
+  console.log("-----------------------");
+}
+
+//Test with variables and boards
+
+var actual1 = neighborsOf(board, 0, 0)
+var actual2 = neighborsOf(board, 0, 1)
+
+var board2 = []
 
