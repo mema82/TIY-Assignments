@@ -1,11 +1,16 @@
-var assert = require('assert');
+var assert = require("assert")
+var expect = require("chai").expect
+describe('Array', function(){
+  describe('#indexOf()', function(){
+    it('should return -1 when the value is not present', function(){
+      assert.equal(-1, [1,2,3].indexOf(5));
+      assert.equal(-1, [1,2,3].indexOf(0));
+    })
+  })
+})
 
-function test(actual, expected, success){
-    success = success || 'pass!';
 
-    assert(actual === expected) || console.log(success);
-}
-
+    
 /**
  * Check Writing
  *
@@ -36,15 +41,109 @@ function test(actual, expected, success){
  * Make up your own, too.
  */
 
-function num2Words(money)
+function num2Words(money) {
 
-var value = money.toString();  //This take the input value of (money) and converts it to a string using the (.toString) code
-value = Number(value).toFixed(2); //This takes the variable named value and applies a decimal point to the fixed values using (.toFixed)
-var cents = value.slice(-2); // This takes the numbers at the -2 place and holds it to be called on later. You can slice off at whatever point you want to specify in the parenthesis.
- 
-var cents2Words = "dollars & " + cents + "/100s";  // This concatenates the num2Words value with the string("dollars") AND the variable(Cents) AND the string("/100s")
+  var value = money.toString();  //This take the input value of (money) and converts it to a string using the (.toString) code
+  
+  value = Number(value).toFixed(2); //This takes the variable named value and applies a decimal point to the fixed values using (.toFixed)
+  
+  var dollars = value.slice(0,-3); // This slices out the values from in index 0 (the first number) to -3 (where the decimal is located in this example) and hold value until we call it
+  
+  var cents = value.slice(-2); // This takes the numbers at the -2 place and holds it to be called on later. You can slice off at whatever point you want to specify in the parenthesis.
+  
+  var cents2Words = "dollars & " + cents + "/100s";  // This concatenates the num2Words value with the string("dollars") AND the variable(Cents) AND the string("/100s")
 
 //Create an array that holds the Word value that maps to the Number value
 
-var one = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve",
-"thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
+var ones = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve",
+"thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+
+var tens = ["zero","ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
+
+var hundreds = ["zero","one hundred","two hundred","three hundred","four hundred","five hundred",
+"six hundred","seven hundred","eight hundred","nine hundred"];
+
+var thousands = ["zero","one hundred","two hundred","three hundred","four hundred","five hundred",
+"six hundred","seven hundred","eight hundred","nine hundred"];
+
+//Conditional statments below
+
+if (money < 20)
+  
+  return ones[dollars] + " " + cents2Words;     //This returns the array of ones
+
+
+if (money < 100) { // if money is less than 100
+
+  
+ if (money % 10 === 0) {  // if money has remainder of 0 when divided by 10. Modulus works as a divide operation too
+  
+return tens[value[0]] + " " + cents2Words;
+
+}
+
+return tens[value[0]] + " " + ones[ value[1]] + cents2Words;
+}
+
+
+if (money < 1000) {
+  
+  if (money % 100 === 0) {
+    
+  return hundreds[value[0]] + " " + cents2Words;
+  }
+}
+
+if (money % 10 === 0){
+   
+   return hundreds[value[0]] + " " + tens[value[1]] + cents2Words;
+}
+if (value[1] < 2) {
+  
+  return hundreds[ value[0]] + " " + tens[value[2]] + cents2Words;
+}
+return hundreds[value[0]] + " " + tens[value[1]] + " " + ones[value[2]] + cents2Words;
+
+
+
+ if (money < 10000) {
+            if (money % 1000 === 0){
+              
+              return(thousands[value[0]]+ cents2Words);}
+            
+            if (money % 100 === 0) {
+              
+              return(thousands[value[0]] +" "+ hundreds[value[1]] + cents2Words);}
+              
+            if (money % 10 === 0) {
+              
+              return(thousands[value[0]] +" "+ hundreds[value[1]] +" "+ tens[value[2]] + cents2Words);}
+              
+            if (value[1] < 1) {
+              
+              return(thousands[value[0]] + " " + tens[value[2]] + " " + ones[value[3]] + cents2Words);}
+              
+            if (value[2] < 2) {return 
+            
+            (thousands[value[0]] +" "+ hundreds[value[1]] +" "+ tens[value[3]] + cents2Words);}
+            
+            return(thousands[value[0]] +" "+ hundreds[value[1]] +" "+ tens[value[2]] +" "+ ones[value[3]] + centsWords)
+ }
+}
+
+
+
+
+
+
+
+//==Tests==
+assert(1, "one dollars & 00/100s");
+assert(50,"fifty dollars & 00/100s");
+assert(500,"five hundred dollars & 00/100s");
+assert(9000,"nine thousand dollars & 00/100s");
+
+
+
+
+
