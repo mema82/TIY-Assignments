@@ -1,4 +1,10 @@
-var assert = require("assert")
+var assert = require('chai').assert;
+var expect = require('chai').expect;
+var should = require('chai').should();
+
+
+
+/*var assert = require("assert")
 var expect = require("chai").expect
 describe('Array', function(){
   describe('#indexOf()', function(){
@@ -10,8 +16,6 @@ describe('Array', function(){
 })
 
 
-    
-/**
  * Check Writing
  *
  * Given an Number representing money -- $1234.56 -- convert
@@ -137,13 +141,18 @@ return hundreds[value[0]] + " " + tens[value[1]] + " " + ones[value[2]] + cents2
 
 
 
-//==Tests==
+/*==Tests==
 assert(1, "one dollars & 00/100s");
 assert(50,"fifty dollars & 00/100s");
 assert(500,"five hundred dollars & 00/100s");
-assert(9000,"nine thousand dollars & 00/100s");
+assert(9000,"nine thousand dollars & 00/100s");*/
 
-
+describe('num2Words(), takes an input and returns a string',function(){
+    it('should be a type of function named num2Words',function(){
+        assert.typeOf(num2Words,'function');
+    });
+    
+ });
 
 
 

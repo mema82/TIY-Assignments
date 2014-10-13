@@ -1,12 +1,17 @@
-var assert = require('assert'); //This is required to run the unit testing.
+//var assert = require('assert'); //This is required to run the unit testing.
 
-function test(actual, expected, success){
+//New Testing Refactor
+var assert = require('chai').assert;
+var expect = require('chai').expect;
+var should = require('chai').should();
+
+/*function test(actual, expected, success){
     if (success === undefined) success = 'pass!';
     assert.strictEqual(actual, expected);
     console.log(success)
-}
+}*/
 
-board =[
+var board =[
      [
          [true,  true, false],
          [false, true, false],
@@ -16,9 +21,9 @@ board =[
 
 function conway(col, row){ //
 
-var cellState = board[col][row];//gives state of cell whr given input values.
+var cellState = board[col][row];//gives state of cell when given input values.
 
-var neighbors = neighborsOf(board,col,row); //input teh boards col and row to get list of neighbors.
+var neighbors = neighborsOf(board,col,row); //input the boards col and row to get list of neighbors.
 
 
 for ( i = 0; i < neighbors.length; i ++) {
@@ -108,10 +113,16 @@ if (col===1 && row===2) {
 }
         
 
-        
-//This reads my boards index for boolean values.   
+
+/*This reads my boards index for boolean values.   
 console.log(board[0][0]);
 console.log(board[0][1]);
-console.log(board[0][2]);
+console.log(board[0][2]);*/
 
-//
+
+describe('conway(), takes an array as input and returns state of cells',function(){
+    it('should be a type of function named conway',function(){
+        assert.typeOf(conway,'function');
+    });
+    
+ });

@@ -1,3 +1,7 @@
+var assert = require('chai').assert;
+var expect = require('chai').expect;
+var should = require('chai').should();
+
 /**
  * String Calculator PING PONG STYLE
  *
@@ -53,7 +57,7 @@ if(number===0){
 
 
 
-console.log('it should convert 1 to "one"',
+/*console.log('it should convert 1 to "one"',
 num2Letters(1)=== "one");
 
 console.log('it should convert 2 to "two"',
@@ -81,7 +85,18 @@ console.log('it should convert 9 to "nine"',
 num2Letters(9)=== "nine");
 
 console.log('it should convert 0 to "zero"',
-num2Letters(0)=== "zero");
+num2Letters(0)=== "zero");*/
+
+describe('num2Letters(), takes an input and returns a string',function(){
+    it('should be a type of function named num2Letters',function(){
+        assert.typeOf(num2Letters,'function');
+    });
+
+ });
+
+it('should return "two" when given 2', function(){
+        assert.strictEqual(num2Letters(2),"two");
+    });
 
 
 
