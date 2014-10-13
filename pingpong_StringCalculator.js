@@ -1,3 +1,12 @@
+/**
+ * String Calculator PING PONG STYLE
+ *
+ * Given two strings like "one", "two", and "three" that
+ * represent numbers, calculate the product of those numbers
+ * and return the result.
+ */
+
+
 var num2Letters= function(number){
     if (number=== 1){
 
@@ -76,4 +85,4 @@ num2Letters(0)=== "zero");
 
 
 
-//var myArray = [ 'zero', 'one', 'two', 'three', 'four', 'five' ];
+
