@@ -86,6 +86,7 @@ num2Letters(9)=== "nine");
 
 console.log('it should convert 0 to "zero"',
 num2Letters(0)=== "zero");*/
+<<<<<<< HEAD
 
 describe('num2Letters(), takes an input and returns a string',function(){
     it('should be a type of function named num2Letters',function(){
@@ -97,3 +98,19 @@ describe('num2Letters(), takes an input and returns a string',function(){
 it('should return "two" when given 2', function(){
         assert.strictEqual(num2Letters(2),"two");
     });
+
+=======
+>>>>>>> 977de6589591d3f25f6a1557f7e2e8cb3b8d7927
+
+describe('num2Letters(), takes an input and returns a string',function(){
+    it('should be a type of function named num2Letters',function(){
+        assert.typeOf(num2Letters,'function');
+    });
+
+ });
+
+it('should return "two" when given 2', function(){
+        assert.strictEqual(num2Letters(2),"two");
+    });
+    
+  )
