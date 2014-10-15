@@ -21,7 +21,7 @@ var board = [
 
 //Making each cell of data its own object with its own properties identifying the number of liveNeighbors
 
-var newBoard = new Array( );
+var newBoard = new Array( ){
 
 newBoard[newBoard.length] = {cell:"[0][0]",  value: "false", liveNeighbors:  "2" };
 newBoard[newBoard.length] = {cell:"[0][1]",  value: "true",  liveNeighbors:  "1" };
@@ -39,7 +39,6 @@ for (var i = 0; i < newBoard.length; i++) {
     newBoard[newBoard[i].value + "_" + newBoard[i].cell] = newBoard[i];
 
 }
-
  return new Array();
 
 //console.log(newBoard.newArray([]), 'empty arrays are arrays');
@@ -47,10 +46,11 @@ for (var i = 0; i < newBoard.length; i++) {
 //console.log(newBoard["cell_[0][0]"]);
 //console.log(newBoard["cell_[0][1]"]);
 
-describe('new Array(), takes an board and returns board',function(){
+//describe('new Array(), takes an board and returns board',function(){
 		it('should be a type of function named newBoard',function(){
 				assert.typeOf(newBoard,'function');
 		});
+
 //expect.newBoard.newBoard.length.cell[0][1].liveNeighbors.to.be.number;
 //it('result should be false,')
 //expect(cell.me.isAlive).to.be.a('false');
