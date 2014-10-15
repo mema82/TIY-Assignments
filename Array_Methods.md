@@ -64,10 +64,10 @@ Returns a new array comprised of this array joined with other array(s) and/or va
 
 ```javascript
 Array.prototype.contains()
-Determines whether an array contains a certain element, returning true or false as appropriate.
+Determines whether an array contains a certain element, returning t or f as appropriate.
+```
 
-
-```javascript```
+```javascript
 Array.prototype.join()
 Joins all elements of an array into a string.
 ```
