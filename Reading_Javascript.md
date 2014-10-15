@@ -3,42 +3,49 @@
 	this.objects = [];
 ```
 
-* Variable: ObjectPool 
-* function expression: function 
-* arguement: (constructor, options)
+* Variable: ObjectPool
+* function : function expression
+* argument: (constructor, options)
 * Operator = assignment (=) , Key (.)
 * constructor = array[ ]
 
- 
+
 ```javascript
 2. ObjectPool.prototype = {
 _construct: function(constructor, args)
 ```
 
 * Object = ObjectPool
-* 
-
+* key = _construct
+* value = function(constructor, args)
 
 
 ```javascript
-3.F.prototype = constructor.prototype;
-	return new F();
+3. var promise = new pc.promise.Promise(function (resolve, reject)
+//A function expression produces a value and can thus be used to
+//directly pass functions as arguments to other functions
 ```
 
-* Variable: `count`
-* Value: Number 0
+* Variable = promise
+* operator = assignment (=) , key (.)
+* function = function expression
+* argument = (resolve, reject)
 
 
 
 ```javascript
 4.  allocate: function () {
 	var object;
-	if (this.objects.length) 
+	if (this.objects.length)
 ```
 
-* Variable: `count`
-* Value: Number 0
-
+* Key =  allocate
+* Value: function
+* var = object
+* conditional statement = if
+* object = this
+* prototype = objects (?)
+* property = length
 
 
 
@@ -48,13 +55,15 @@ _construct: function(constructor, args)
 ```
 
 
-* Variable: `count`
-* Value: Number 0
-* 
+* Dictionary = free
+* Value: function(object)
+* object = this
+* prototype = objects (?)
+* constructor = push (?)
 
 ```javascript
 6. usage: function () {
-	return pc.string.format("{0} - total: {1}, used: {2}", 	
+	return pc.string.format("{0} - total: {1}, used: {2}",
 	this.name, this.total, this.used);
 ```
 
@@ -79,7 +88,7 @@ _construct: function(constructor, args)
 
 * Variable: `count`
 * Value: Number 0
-* 
+*
 
 
 ```javascript
@@ -187,7 +196,7 @@ All numbers in JavaScript are floating point (although most JavaScript engines i
 
 1 === 1.0
     true
-    
+
 22. ```javascript
 
 String Methods
@@ -195,7 +204,7 @@ Fonction that lives inside the string
 ```
  'mjölnir'.toUpperCase()
     'MJÖLNIR'
-    
+
     'abc'.indexOf('b')  // find a string
     1
 
@@ -210,7 +219,7 @@ A property key can be any string. So far, we have seen property keys in object l
     obj['not an identifier'] = 456;
 
 24. ```javascript
-Math is an object with arithmetic functions. 
+Math is an object with arithmetic functions.
 ```
 Examples:
     Math.abs(-2)
@@ -218,33 +227,33 @@ Examples:
 
      Math.pow(3, 2)  // 32
     9
-    
+
  25. ```javascript
  Strict mode
 Strict mode enables checks and a few other measures that make JavaScript a slightly cleaner language. It is recommended to use it. To do so, make this the first line of a JavaScript file or a script tag:
- ``` 
+ ```
  'use strict';
 
 26. ```javascript
  ForEach
 iterates over an array and hands the current element and its index to a function:
-``` 
+```
 
     [ 'a', 'b', 'c' ].forEach(
         function (elem, index) {  // (*)
             console.log(index + '. ' + elem);
         });
-        
-27. 
+
+27.
 ```javascriptArray Literals
 Array literals are handy for creating arrays:
 var arr = [ 'a', 'b', 'c' ];
-``` 
- 
+```
+
 28. ```javascriptArray Literals
 Array.prototype.shift()
 Removes the element at index 0 and returns it. The indices of subsequent elements are decremented by 1:
-``` 
+```
  var arr = [ 'a', 'b' ];
  arr.shift()
 'a'
@@ -256,7 +265,7 @@ Removes the element at index 0 and returns it. The indices of subsequent element
 Array Literals
 Array.prototype.pop()
 Removes the last element of the array and returns it:
-``` 
+```
 
 var arr = [ 'a', 'b' ];
 arr.pop()
@@ -270,13 +279,9 @@ arr
 
 Array.prototype.push(elem1?, elem2?, ...)
 Adds the given elements to the end of the array. It returns the new length:
-``` 
+```
  var arr = [ 'a', 'b' ];
 arr.push('c', 'd')
 4
  arr
 [ 'a', 'b', 'c', 'd' ]
-
-
-
-  
