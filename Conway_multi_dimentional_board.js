@@ -30,39 +30,71 @@ board[4][3] = board [6][3];
 board[6][3] = ' ';
 },
 
-step2:
-console.log(board)
 
 //Black Queens pawn moves forward 2 spots
-step3: board[3][3] = board[1][3]
-step4: board[1][3] = ' ',
+
+step2: function() {
+board[3][3] = board[1][3]
+board[1][3] = ' ',
+
+},
+
 
 //White Knight moves up 2 spots and over 1
-step5: board[5][5] = board[7][6],
-step6: board[7][6] = ' ',
+
+step3: function(){
+board[5][5] = board[7][6],
+board[7][6] = ' ',
+
+},
+
 
 //Black Pawn moves up 1 spot
-step7: board[2][4] = board[1][4],
-step8: board[1][4] = ' ',
+
+step4: function(){
+board[2][4] = board[1][4],
+board[1][4] = ' ',
+
+},
 
 //White Knight Pawn moves up 1 spot
-step9: board[5][6] = board[6][6],
-step10: board[6][6] = ' ',
+
+step5: function() {
+board[5][6] = board[6][6],
+board[6][6] = ' ',
+
+},
+
 
 //Black Bishop moves diagnol down and left 1 spot
-step11: board[1][4] = board[0][5],
-step12: board[0][5] = ' ',
+
+step6: function() {
+board[1][4] = board[0][5],
+board[0][5] = ' ',
+
+},
+
 
 //White Bishop's Pawn moves up 2 spots
-step13: board[4][2] = board[6][2],
+
+step7: function() {
+board[4][2] = board[6][2],
 step14: board[6][2] = ' ',
 
+},
+
 //Black Knights move over 1 spot and down 2
-step15: board[2][5] = board[0][6],
-step16: board[0][6] = ' ',
+
+step8: function() {
+board[2][5] = board[0][6],
+board[0][6] = ' ',
+
+},
 
 //White Bishop moves diagnol up and right 1 spot
-step17: board[6][6] = board[0][6],
+
+step9: function() {
+board[6][6] = board[0][6],
 step18: board[7][5] = ' '
 
 }
@@ -104,3 +136,115 @@ it('after Move 2, the board should look like', function(){
       ['r','n','b','q','k','b','n','r'] ]
     )
   });
+
+   it('after Move 3, the board should look like:', function(){
+    moves.step3();
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ','P','P','P','P'],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ',' ','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n',' ',' '],
+      ['p','p','p',' ','p','p','p','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+    );
+  });
+
+  it('after Move 4, the board should look like:', function(){
+    moves.step4()
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ',' ','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n',' ',' '],
+      ['p','p','p',' ','p','p','p','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+    );
+  });
+
+  it('after Move 5, the board should look like:', function(){
+    moves.step5();
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K','B','N','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ',' ','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p','p',' ','p','p',' ','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+    );
+  });
+
+  it('after Move 6, the board should look like:', function(){
+    moves.step6();
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K',' ','N','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ',' ','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p','p',' ','p','p',' ','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+    );
+  });
+
+  it('after Move 7, the board should look like:', function(){
+    moves.step7();
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K',' ','N','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P',' ',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p',' ','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+    );
+  });
+
+  it('after Move 8, the board should look like:', function(){
+    moves.step8();
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K',' ',' ','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p',' ','p'],
+      ['r','n','b','q','k','b',' ','r'] ]
+    );
+  });
+  it('after Move 9, the board should look like:', function(){
+    moves.step9();
+
+    assert.deepEqual(board,
+      [
+      ['R','N','B','Q','K',' ',' ','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p','b','p'],
+      ['r','n','b','q','k',' ',' ','r'] ]
+    );
+  });
+})
