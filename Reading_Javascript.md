@@ -535,7 +535,9 @@ example:
 
 arr.reduceRight(callback[, initialValue])
 
-```GENERIC METHODS
+```javascript
+
+GENERIC METHODS
 
 These methods pertain to "array-like" objects, such as
 arguement and strings, which have a numeric length property
