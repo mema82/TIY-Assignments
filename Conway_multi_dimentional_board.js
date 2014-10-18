@@ -19,7 +19,7 @@ console.log(board.join('\n') + '\n\n');
 
 // Move King's Pawn forward 2
 board[4][4] = board[6][4];
-board[6][4] = ' ';
+board[6][4] = ' '
 console.log(board.join('\n'));
 
 var moves = {
@@ -27,24 +27,24 @@ var moves = {
 
 step1: function() {
 board[4][3] = board [6][3];
-board[6][3] = ' ';
+board[6][3] = ' '
 },
 
 
 //Black Queens pawn moves forward 2 spots
 
 step2: function() {
-board[3][3] = board[1][3]
-board[1][3] = ' ',
+board[3][3] = board[1][3];
+board[1][3] = ' '
+
 
 },
-
 
 //White Knight moves up 2 spots and over 1
 
 step3: function(){
-board[5][5] = board[7][6],
-board[7][6] = ' ',
+board[5][5] = board[7][6];
+board[7][6] = ' '
 
 },
 
@@ -52,16 +52,16 @@ board[7][6] = ' ',
 //Black Pawn moves up 1 spot
 
 step4: function(){
-board[2][4] = board[1][4],
-board[1][4] = ' ',
+board[2][4] = board[1][4];
+board[1][4] = ' '
 
 },
 
 //White Knight Pawn moves up 1 spot
 
 step5: function() {
-board[5][6] = board[6][6],
-board[6][6] = ' ',
+board[5][6] = board[6][6];
+board[6][6] = ' '
 
 },
 
@@ -69,8 +69,8 @@ board[6][6] = ' ',
 //Black Bishop moves diagnol down and left 1 spot
 
 step6: function() {
-board[1][4] = board[0][5],
-board[0][5] = ' ',
+board[1][4] = board[0][5];
+board[0][5] = ' '
 
 },
 
@@ -78,35 +78,35 @@ board[0][5] = ' ',
 //White Bishop's Pawn moves up 2 spots
 
 step7: function() {
-board[4][2] = board[6][2],
-step14: board[6][2] = ' ',
+board[4][2] = board[6][2];
+board[6][2] = ' '
 
 },
 
 //Black Knights move over 1 spot and down 2
 
 step8: function() {
-board[2][5] = board[0][6],
-board[0][6] = ' ',
+board[2][5] = board[0][6];
+board[0][6] = ' '
 
 },
 
 //White Bishop moves diagnol up and right 1 spot
 
 step9: function() {
-board[6][6] = board[0][6],
-step18: board[7][5] = ' '
+board[6][6] = board[7][5];
+board[7][5] = ' '
 
 }
 
-console.log(board.join('\n));
+}
+console.log(board.join('\n'));
 
 
-describe('Testing the board state' function(){
+describe('Testing the board state', function(){
   it('After Move 1, the board should look like:', function(){
     moves.step1();
-
-    assert.deepEqual (board,
+    assert.deepEqual(board,
       [
       ['R','N','B','Q','K','B','N','R'],
       ['P','P','P','P','P','P','P','P'],
@@ -116,16 +116,13 @@ describe('Testing the board state' function(){
       [' ',' ',' ',' ',' ',' ',' ',' '],
       ['p','p','p',' ','p','p','p','p'],
       ['r','n','b','q','k','b','n','r'] ]
-    )
+    );
   });
+  it('after Move 2, the board should look like:', function(){
+    moves.step2();
 
-
-
-it('after Move 2, the board should look like', function(){
-  moves.step2();
-
-  assert.deepEqual(board,
-    [
+    assert.deepEqual(board,
+      [
       ['R','N','B','Q','K','B','N','R'],
       ['P','P','P',' ','P','P','P','P'],
       [' ',' ',' ',' ',' ',' ',' ',' '],
@@ -134,10 +131,9 @@ it('after Move 2, the board should look like', function(){
       [' ',' ',' ',' ',' ',' ',' ',' '],
       ['p','p','p',' ','p','p','p','p'],
       ['r','n','b','q','k','b','n','r'] ]
-    )
+    );
   });
-
-   it('after Move 3, the board should look like:', function(){
+  it('after Move 3, the board should look like:', function(){
     moves.step3();
 
     assert.deepEqual(board,
@@ -152,7 +148,6 @@ it('after Move 2, the board should look like', function(){
       ['r','n','b','q','k','b',' ','r'] ]
     );
   });
-
   it('after Move 4, the board should look like:', function(){
     moves.step4()
 
@@ -168,7 +163,6 @@ it('after Move 2, the board should look like', function(){
       ['r','n','b','q','k','b',' ','r'] ]
     );
   });
-
   it('after Move 5, the board should look like:', function(){
     moves.step5();
 
@@ -184,7 +178,6 @@ it('after Move 2, the board should look like', function(){
       ['r','n','b','q','k','b',' ','r'] ]
     );
   });
-
   it('after Move 6, the board should look like:', function(){
     moves.step6();
 
@@ -200,7 +193,6 @@ it('after Move 2, the board should look like', function(){
       ['r','n','b','q','k','b',' ','r'] ]
     );
   });
-
   it('after Move 7, the board should look like:', function(){
     moves.step7();
 
@@ -216,7 +208,6 @@ it('after Move 2, the board should look like', function(){
       ['r','n','b','q','k','b',' ','r'] ]
     );
   });
-
   it('after Move 8, the board should look like:', function(){
     moves.step8();
 

@@ -540,7 +540,7 @@ arr.reduceRight(callback[, initialValue])
 GENERIC METHODS
 
 These methods pertain to "array-like" objects, such as
-arguement and strings, which have a numeric length property
+argument and strings, which have a numeric length property
 and corresponding non-negative inter properties. They do not
 inherit from Array.prototype and therefore cannot invoke
 the array methods (described above) directly, but can be
