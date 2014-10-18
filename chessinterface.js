@@ -21,7 +21,30 @@ var _ = require('lodash/dist/lodash.underscore');
 
 //@constructor Chess: Setup a board with Pieces representing an initial chessboard.
 
-var whiteQueen = new Queen("White");
+
+var pawn = new Pawn("White_Pawn");
+function Pawn(Player){
+this.Player   =  Player;
+}
+//console.log(Pawn);
+
+var knight = new Knight("White_Knight");
+function Knight(Player){
+this.Player   =  Player;
+}
+//console.log(Knight);
+
+var bishop = new Bishop("White_Bishop");
+function Bishop(Player){
+this.Player   =  Player;
+}
+
+var rook = new Rook("White_Rook");
+function Rook(Player){
+this.Player   =  Player;
+}
+
+var queen = new Queen("White_Queen");
 function Queen(Player){
 this.Player   =  Player;
 }
@@ -30,57 +53,34 @@ this.Player   =  Player;
 /*@method getPlayer()
 @return String either "white" or "black" representing current player*/
 
-Queen.prototype.getPlayer = function() {
+Pawn.prototype.getPlayer = function() {
+
+  return this.Player
+}
+
+Knight.prototype.getPlayer = function() {
+
+  return this.Player
+}
+
+Bishop.prototype.getPlayer = function() {
 
   return this.Player
 }
 
 
+Rook.prototype.getPlayer = function() {
 
-console.log(whiteQueen.getPlayer());
+  return this.Player
+}
 
+Queen.prototype.getPlayer = function() {
 
+  return this.Player
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*var Bishop = {color: 'white'}
-var Knight = {color: 'white'}
-var Rook   = {color: 'white'}
-var Queen  = {color: 'white'}
-var pawn   = {color: 'black'}
-var bishop = {color: 'black'}
-var knight = {color: 'black'}
-var rook   = {color: 'black'}
-var queen  = {color: 'black'}
-
-*/
-
-//console.log(Chess)
-
-
-
-
-
-//Chess.prototype.getPlayer = function(){
-
-//  return this.Pawn
-//}
+//console.log(pawn.getPlayer());
+//console.log(knight.getPlayer());
+//console.log(bishop.getPlayer());
+//console.log(rook.getPlayer());
+//console.log(queen.getPlayer());
