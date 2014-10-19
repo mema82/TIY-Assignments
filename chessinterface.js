@@ -21,7 +21,7 @@ var _ = require('lodash/dist/lodash.underscore');
 
 //@constructor Chess: Setup a board with Pieces representing an initial chessboard.
 
-
+/*
 var pawn = new Pawn("White_Pawn");
 function Pawn(Player){
 this.Player   =  Player;
@@ -50,9 +50,12 @@ this.Player   =  Player;
 }
 
 
+
+
+
 /*@method getPlayer()
 @return String either "white" or "black" representing current player*/
-
+/*
 Pawn.prototype.getPlayer = function() {
 
   return this.Player
@@ -84,3 +87,24 @@ Queen.prototype.getPlayer = function() {
 //console.log(bishop.getPlayer());
 //console.log(rook.getPlayer());
 //console.log(queen.getPlayer());
+
+*/
+//@method move(piece, destination): Move piece to destination and...?
+
+//var color = 'white';
+
+function Chess()
+{
+
+ //var color = '';
+
+
+var pawn = function(Player) {
+this.Player  =  'Pawn';
+this.color   = 'black';
+}
+
+
+var c = new Chess();
+
+console.log(this.Player); // should be pawn
