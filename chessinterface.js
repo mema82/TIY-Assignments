@@ -20,31 +20,69 @@ var _ = require('lodash/dist/lodash.underscore');
 */
 
 //@constructor Chess: Setup a board with Pieces representing an initial chessboard.
+//I think an inital board is setup by defining ALL its pieces and their colors
 
-/*
-var pawn = new Pawn("White_Pawn");
+
+function Chess(player) { //constructor
+}
+//testing ideas
+//var Chess1= "Player1";
+//var Chess2= "Player2";
+
+
+
+//PlAYER 1's pieces
+
+var wPawn = new Pawn("white");
 function Pawn(Player){
 this.Player   =  Player;
 }
-//console.log(Pawn);
 
-var knight = new Knight("White_Knight");
+var wKnight = new Knight("white");
 function Knight(Player){
 this.Player   =  Player;
 }
-//console.log(Knight);
 
-var bishop = new Bishop("White_Bishop");
+var wBishop = new Bishop("white");
 function Bishop(Player){
 this.Player   =  Player;
 }
 
-var rook = new Rook("White_Rook");
+
+var wRook = new Rook("white");
 function Rook(Player){
 this.Player   =  Player;
 }
 
-var queen = new Queen("White_Queen");
+var wQueen = new Queen("white");
+function Queen(Player){
+this.Player   =  Player;
+}
+
+//PLAYER 2's pieces
+
+var bPawn = new Pawn("black");
+function Pawn(Player){
+this.Player   =  Player;
+}
+
+var bKnight = new Knight("black");
+function Knight(Player){
+this.Player   =  Player;
+}
+
+var bBishop = new Bishop("black");
+function Bishop(Player){
+this.Player   =  Player;
+}
+
+
+var bRook = new Rook("black");
+function Rook(Player){
+this.Player   =  Player;
+}
+
+var bQueen = new Queen("black");
 function Queen(Player){
 this.Player   =  Player;
 }
@@ -52,10 +90,16 @@ this.Player   =  Player;
 
 
 
+//Just some tests
+//console.log(Chess); //Returns that this is a function
+//console.log(wQueen); //Returns Player "white"
+//console.log(bQueen);  //Returns Player "black"
+
 
 /*@method getPlayer()
 @return String either "white" or "black" representing current player*/
-/*
+
+
 Pawn.prototype.getPlayer = function() {
 
   return this.Player
@@ -71,40 +115,23 @@ Bishop.prototype.getPlayer = function() {
   return this.Player
 }
 
-
 Rook.prototype.getPlayer = function() {
 
   return this.Player
 }
+
 
 Queen.prototype.getPlayer = function() {
 
   return this.Player
 }
 
-//console.log(pawn.getPlayer());
-//console.log(knight.getPlayer());
-//console.log(bishop.getPlayer());
-//console.log(rook.getPlayer());
-//console.log(queen.getPlayer());
 
-*/
+
+
+//console.log(wQueen.getPlayer()); //Returns White
+//console.log(bRook.getPlayer()); //Returns Black
+//console.log(bPawn.getPlayer()); //Returns Black
+
+
 //@method move(piece, destination): Move piece to destination and...?
-
-//var color = 'white';
-
-function Chess()
-{
-
- //var color = '';
-
-
-var pawn = function(Player) {
-this.Player  =  'Pawn';
-this.color   = 'black';
-}
-
-
-var c = new Chess();
-
-console.log(this.Player); // should be pawn
