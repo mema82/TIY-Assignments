@@ -569,7 +569,7 @@ Look for:
 	this.baz = 'baz'; //Default values
 }
 
-constructor = function Foo (bar)
+
 
 object: Foo
 Type: keyword
@@ -590,7 +590,10 @@ Operands: function Foo (bar)
 
 2. Foo.Prototype.fooBar= Foo; // class method
 
-Method: Prototype
+Method: Specifies the function that creates an object's prototype
+symbol: period (.)
+name: key
+meaning: provides access to specified object
 
 
 
@@ -603,4 +606,59 @@ Meaning: Creates an identifier
 Operands: new Foo
 
 
-4.
+4. var Scene = function Scene() {
+        this.drawCalls = [];
+        this.shadowCasters = [];
+
+
+Type: var
+Name: "function Scene"
+Meaning: creates constructor
+
+
+5. Scene.prototype.getModels = function ()
+
+
+Method: Specifies the function that creates an object's prototype
+symbol: period (.)
+name: key
+meaning: provides access to specified object
+
+
+6. var lights = model.getLights();
+
+
+Name: variable
+Keyword: var
+Name: lights
+Meaning:  an object that can hold a variety of inputs
+
+
+7. clone: function ()
+
+Object: Dictionary
+Name: clone
+Key: function()
+
+
+8. update: function ()
+
+Object: Dictionary
+Name: update
+key: function()
+
+9. updateShader: function (device)
+
+object: Dictionary
+Name: updateShader
+key: function()
+
+
+
+10 Picker.prototype.prepare = function (camera, scene)
+
+Method: Specifies the function that creates an object's prototype
+symbol: period (.)
+name: key
+meaning: provides access to specified object
+parameters: (camera, scene)
