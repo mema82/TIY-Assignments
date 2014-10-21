@@ -553,3 +553,54 @@ example:
 var a = {"0":"a". "1":"b", "2":"c", length:3};
 // An array-like object
 Array.prototype.join.call(a, "+") // => "a+b+c"
+
+
+/* 10 more JAVASCRIPT OBJECTS
+Look for:
+*Capitalized function definitions (Constructors)
+*using the new keyword
+*all them prototypes everywhere
+*/
+
+
+1. function Foo (bar) {
+
+	this.bar = bar; //Default values
+	this.baz = 'baz'; //Default values
+}
+
+constructor = function Foo (bar)
+
+object: Foo
+Type: keyword
+Name: "function foo"
+Meaning: created an identifier
+
+Symbol: 'baz'
+Type: Type Literal
+Name: "string baz"
+Meaning: Create a literal String value containing "baz"
+
+Symbol: =
+Type: Operator
+Name: "is assigned"
+Meaning: Stores the value to the right on the identifier to the left
+Operands: function Foo (bar)
+
+
+2. Foo.Prototype.fooBar= Foo; // class method
+
+Method: Prototype
+
+
+
+3. var object = new Foo('Hello'); //constructor call
+
+Symbol: var
+Type: Keyword
+Name: "var"
+Meaning: Creates an identifier
+Operands: new Foo
+
+
+4.
