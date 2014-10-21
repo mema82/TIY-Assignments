@@ -1,3 +1,9 @@
+<style>
+body {
+    background-color: gray;
+}
+</style>
+
 # For the love of beer! This is a website.
 
 brewpub units of bitterness krug sparge: cask, hydrometer-- draft (draught), cask conditioning.
