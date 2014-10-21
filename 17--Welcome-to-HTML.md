@@ -21,7 +21,7 @@ terminal gravity bottle conditioning; bitter. hand pump.
 
 ## It smells good
 
-becher conditioning adjunct aau oxidized! draft (draught), brewpub dextrin sparge bitter bunghole. oxidized specific gravity mouthfeel terminal gravity. 
+becher conditioning adjunct aau oxidized! draft(draught), brewpub dextrin sparge bitter bunghole. oxidized specific gravity mouthfeel terminal gravity. 
 
 ## It makes others look good
 
