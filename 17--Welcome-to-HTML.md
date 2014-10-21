@@ -44,7 +44,9 @@ microbrewery fermentation pitching primary fermentation pitch: squares oxidized 
 ---------------------------------------------------------------
 ## Epilougue
 
-This site was made to mimic <a href="http://motherfuckingwebsite.com">.... and to fulfill my project requirements.
+This site was made to mimic [Motherfuckingwebsite.com].. and fulfill my project assignment....
+
+
 
 
 
