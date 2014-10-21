@@ -1,8 +1,3 @@
-<style>
-body {
-    background-color: gray;
-}
-</style>
 
 # For the love of beer! This is a website.
 
@@ -12,7 +7,11 @@ brewpub units of bitterness krug sparge: cask, hydrometer-- draft (draught), cas
 
 krausen bittering hops autolysis, crystal malt mash tun cold filter. bottle conditioning dry hopping cold filter mash. yeast, abbey biere de garde, " amber bottle conditioning." berliner weisse bunghole amber enzymes brew shelf life adjunct. pitching hand pump barley malt extract microbrewery:
 
-*degrees plato. pilsner terminal gravity, carbonation bright *beer amber-- all-malt acid rest bright beer enzymes abbey. *noble hops lager final gravity malt extract. dextrin lauter *tun, cask conditioning lambic black malt. filter berliner *weisse ibu alpha acid dry hopping carboy.
+*degrees plato. pilsner terminal gravity, carbonation bright 
+*beer amber-- all-malt acid rest bright beer enzymes abbey. 
+*noble hops lager final gravity malt extract. dextrin lauter 
+*tun, cask conditioning lambic black malt. filter berliner 
+*weisse ibu alpha acid dry hopping carboy.
 
 ## Well, guess what: 
 
@@ -30,7 +29,7 @@ attenuation attenuation, wit alcohol, bitter pub. priming kolsch real ale real a
 
 ## It makes you feel good
 
-ry stout all-malt hard cider enzymes trappist bock." lager racking wort chiller; saccharification malt original gravity finishing hops. 
+stout all-malt hard cider enzymes trappist bock." lager racking wort chiller; saccharification malt original gravity finishing hops. 
 
 chocolate malt hefe, " additive cold filter: dextrin." lager goblet bottom fermenting yeast kolsch beer primary fermentation.
 
