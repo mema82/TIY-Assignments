@@ -249,7 +249,8 @@ Url: http://orlando.theironyard.com/
 
 * Name: Pre Tag
 * Symbol: <pre></pre>
-* meaning: preformatted text accepted between tags
+* meaning: preformatted text accepted between tags and allows the 
+format to be set just as it was places in. It accepte the white spacing that it would not except without the pre tag.
 
 
 Examples:
