@@ -263,4 +263,47 @@ both      spaces and
 line breaks
 </pre>
 
+10 MORE tags (20)
+
+11.<audio> sound her</audio>
+
+
+12.<blockquote>  text for quotes here</blockquote>
+
+
+13.<dd> Definiton Description here</dd>
+
+
+14.<canvas> Drawing Canvas </canvas>
+
+
+15.<div> Document Division </div>
+
+
+16.<figcaption> figure caption </figcaption>
+
+
+17.<hgroup> Grouped header info</hgroup>
+
+
+18.<hr>Horizontal Rule</hr>
+
+
+19.<section>seperated section of page</section>
+
+
+20.<table> table here</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
