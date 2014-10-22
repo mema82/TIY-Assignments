@@ -1,9 +1,10 @@
 ```
 <h1>10 block level tags</h1>
 ```
+
 ```
 1. <p> Paragraph </p>
-```
+
 * Name: Paragraph Tag
 * Symbol: <p></p>
 * meaning: starts and ends paragraph of text
@@ -12,7 +13,7 @@ url: http://orlando.theironyard.com/
 
 
 Examples:
-```
+
 1. <p><em>By Susanna Miller, Campus Director</em></p>
 
 2. <p>You can find more information on our Meetup page: </p>
@@ -23,6 +24,8 @@ Examples:
 ```
 2.<h1>Header</h6>
 ```
+
+```
 * Name: Header Tag
 * Symbol: h1 -h6 inside < >
 * meaning: Sets size of text from 1-6 range.
@@ -31,7 +34,7 @@ url: http://orlando.theironyard.com/
 
 Examples:
 
-```
+
 1. h1><a href="/">The Iron Yard | Orlando</a></h1>
 
 2. <h2>Elsewhere</h2>
@@ -43,6 +46,7 @@ Examples:
 3.<span>Span</span>
 ```
 
+```
 * Name: Span Tag
 * Symbol: span inside < >
 * meaning: Used for grouping elements for styling purposes or because similar attribute values are shared.
@@ -51,15 +55,16 @@ url: http://orlando.theironyard.com/
 
 Examples:
 
-```
-1. <span class="icon">2</span>
+1.<span class="icon">2</span>
 2.<span class="label">Copy short URL</span>
 3. <span class="icon">f</span>
 ```
 
-
+```
 4. <ul>unordered list</ul>
+```
 
+```
 * Name: unordered lists
 * Symbol: <ul> </ul>
 * meaning: blocks off area to create an unordered list
@@ -68,7 +73,7 @@ url : http://theironyard.com/
 
 Examples:
 
-```
+
  1. <ul>
                   <li><a href="/locations">Locations</a></li>
                   <li><a href="/academy">Academy</a></li>
@@ -98,6 +103,8 @@ Examples:
 ```
 5.<footer>Footer</footer>
 ```
+
+```
 * Name: Footer Tag
 * Symbol: <footer></footer>
 * meaning: blocks off the footer element
@@ -107,36 +114,33 @@ url: http://orlando.theironyard.com/
 
 Examples:
 
-```
+
 1. <footer>
-    <div class="footer-wrap content-wrap clearfix">
-      <aside class="sidebar">
-        <div class="avatar-wrap">
-          <a href="/"><img alt="The Iron Yard | Orlando" src="http://33.media.tumblr.com/avatar_31b8d8bf579d_64.png" /></a>
-        </div>
-      </aside>
-      <div class="content">
-        <h2 class="secondary-title">The Iron Yard | Orlando</h2>
-        <div class="blog-description">Happenings and updates from The Iron Yard in Orlando, FL.</div><div class="social-icons module clearfix">
-          <h2>Elsewhere</h2>
-          <div class="wrap"></div>
-        </div><div class="attribution">
-          <a href="http://www.pixelunion.net/themes/longform">Longform Theme</a>&nbsp;by&nbsp;<a href="http://www.pixelunion.net">Pixel Union</a>. Powered by&nbsp;<a href="http://www.tumblr.com">Tumblr</a>.</div>
-      </div>
-    </div>
-  </footer>
+              <a class="aside-author" href="/author/jefflembeck">Jeff Lembeck</a>
+              <time class="pubdate updated" datetime="2014-10-15T08:30:00-04:00"><a href="/blog/post/personalizing-git-with-aliases">October 15, 2014</a></time>
+            </footer>
 
-Url: http://theironyard.com/academy/
+url: alistapart.com
 
-2. <div class="footer">
 
-3. <div class="footer-nav">
+2. <footer>
+              <time class="pubdate updated" datetime="2014-10-16T08:30:00-04:00">October 16, 2014</time>
+            </footer>
+          
+
+
+3. <footer>
+              <a class="aside-author" href="/author/susanrobertson">Susan Robertson</a>
+              <time class="pubdate updated" datetime="2014-10-22T08:30:00-04:00"><a href="/blog/post/learning-to-be-flexible">October 22, 2014</a></time>
+            </footer>
+
 ```
 
 ```
 6.<article> Content Here</article>
 ```
 
+```
 * Name: Article Tag
 * Symbol: <article></article>
 * meaning: blocks  off article content
@@ -145,7 +149,6 @@ Url:  http://orlando.theironyard.com/
 
 Examples:
 
-```
 1. <article class="post type-text" id="100189034319"><div class="clearfix rte">
 
 2. <article class="post type-text" id="97086023659">
@@ -156,35 +159,31 @@ Examples:
 ```
 7.<address> Contact Info</address>
 ```
+
+```
 * Name: Address Tag
 * Symbol: <address></address>
 * meaning: blocks of contact info
 
 Examples:
 
-url: http://www.w3.org/MarkUp/html3/address.html
+url: http://www.techonthenet.com/
 
-```
-1. <PRE>&lt;ADDRESS&gt;
-Newsletter editor&lt;BR&gt;
-J.R. Brown&lt;BR&gt;
-8723 Buena Vista, Smallville, CT 01234&t;BR&gt;
-Tel: +1 (123) 456 7890
-&lt;/ADDRESS&gt;</PRE>
 
-url: http://www.iandevlin.com/blog/2012/01/html/marking-up-a-postal-address-with-html
+1. <body>
+<address>Contact information goes here</address>
+</body>
 
-2. <dl> 
-   <dt>Address</dt> 
-   <dd>Karlstraße 120</dd> 
-   <dd>D-40210</dd> 
-   <dd>Düsseldorf</dd> 
-   <dd>Germany</dd> 
-   <dt>Tel:</dt> 
-   <dd>+49 1234 5678</dd> 
-   <dt>Fax:</dt> 
-   <dd>+49 1234 5679</dd>    
-</dl>
+
+2.  <div class="footer">
+  <address>
+  You can contact us at:<br />
+  TechOnTheNet.com<br />
+  123 Somewhere St.<br />
+  City, State
+  </address>
+</div> 
+
 
 url: http://www.mediaevent.de/xhtml/address.html
 
@@ -193,32 +192,55 @@ Neue Straße 117
 12345 Altheim
 </address> 
 ```
+
 ```
-8.<ol>Ordered List</ol>
+8.<ul>unOrdered List</ul>
 ```
 
-* Name: Ordered list
-* Symbol: <ol> </ol>
-* meaning: blocks off area to create an Ordered list
+```
+* Name: unOrdered list
+* Symbol: <ul> </ul>
+* meaning: blocks off area to create an unOrdered list
 
 url: http://www.echoecho.com/htmllists02.htm
 
-Examples:
+Examples: 
 
-```
-1. <ol>
-<li>text</li>
-<li>text</li>
-<li>text</li>
-</ol>
+Url: http://html.cita.illinois.edu/nav/list/list-examples.php
 
-2. <ol type="I">
 
-3. <ol type="I" start="7">
+1. <ul> 
+  <li>item 1</li> 
+  <li>item 2</li> 
+</ul>
+
+Url: http://theironyard.com/
+
+2. <ul>
+                  <li><a href="/locations">Locations</a></li>
+                  <li><a href="/academy">Academy</a></li>
+                  <li><a href="/accelerator">Accelerator</a></li>
+                  <li><a href="/events">Events</a></li>
+                </ul>
+
+3. <ul>
+              <li><a href="/locations">Locations</a></li>
+              <li><a href="/academy">Academy</a></li>
+              <li><a href="/accelerator">Accelerator</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="http://news.theironyard.com">News</a></li>
+              <li><a href="http://blog.theironyard.com">Blog</a></li>
+            </ul>
+
+
 ```
 
 ```
 9. <aside> side content</aside>
+```
+
 ```
 * Name: Aside Tag
 * Symbol: <aside></aside>
@@ -228,7 +250,6 @@ Exmples:
 
 Url: http://orlando.theironyard.com/
 
-```
 1.    <aside class="sidebar">
         <div class="avatar-wrap">
           <a href="/"><img alt="The Iron Yard | Orlando" src="http://33.media.tumblr.com/avatar_31b8d8bf579d_64.png" /></a>
@@ -247,6 +268,7 @@ Url: http://orlando.theironyard.com/
 10. <pre> formatted text</pre>
 ```
 
+```
 * Name: Pre Tag
 * Symbol: <pre></pre>
 * meaning: preformatted text accepted between tags and allows the 
@@ -257,7 +279,6 @@ Examples:
 
 Url: http://www.w3.org/MarkUp/html3/literal.html
 
-```
 1. <PRE>
        Higher still and higher
          From the earth thou springest
@@ -289,53 +310,100 @@ line breaks
 ```
 11.<audio> sound here</audio>
 ```
+
+```
 This is used to embed sound into documents
 
-1.
-2.
-3.
+1.<audio autoplay="autoplay" controls="controls">  
+   <source src="music.ogg" />  
+   <source src="music.mp3" />  
+</audio> 
+
+2.<audio src="/music/good_enough.mp3" controls>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+
+3. <audio preload="auto" id="id12" controls="controls" onended="func12();" src="http://192.168.1.68/mymusic.wav"></audio>
+
+```
 
 ```
 12.<blockquote>  text for quotes here</blockquote>
 ```
 
+```
 This allows for visual render to show citation
 
-1.
-2.
-3.
+1. <blockquote><p>This is a longer block quote.</p>
+  <p>It uses paragraph elements.</p>
+</blockquote>
+
+2. <blockquote><p>This is a longer block quote.</p>
+  <p>It uses paragraph elements.</p>
+</blockquote>
+
+3. <blockquote>This is a short block quote — look Ma, no paragraph tags!</blockquote>
+
+```
 
 ```
 13.<dd> Definiton Description here</dd>
 ```
 
+```
 This element indicated the description of a term ONLY to be used in a description list(dl)element.
 
+1.
+
+2.
+
+3.
 
 
 ```
 14.<canvas> Drawing Canvas </canvas>
  ```
-
+```
  This element can an be used to draw graphics via scripting (usually JavaScript)
 
+
+
+```
 
 ```
 15.<div> Document Division </div>
 ```
+```
+1.
+2.
+3.
 
-This element indicates the description of a term in a description list (<dl>) element. This element can occur only as a child element of a definition list and it must follow a <dt> element.
-
+```
 
 ```
 16.<figcaption> figure caption </figcaption>
 ```
 
+```
+
 This element represents a caption or legend associated with a figure
 or illustration.
 
+1.
+2.
+3.
+
+
 ```
 17.<hgroup> Grouped header info</hgroup>
+```
+
+```
+1.
+2.
+3.
+
+
 ```
 
 ```
