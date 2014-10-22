@@ -1,68 +1,74 @@
+```
 <h1>10 block level tags</h1>
-
+```
+```
 1. <p> Paragraph </p>
-
-Name: Paragraph Tag
-Symbol: <p> </p>
-meaning: starts and ends paragraph of text
+```
+* Name: Paragraph Tag
+* Symbol: <p></p>
+* meaning: starts and ends paragraph of text
 
 url: http://orlando.theironyard.com/
 
 
 Examples:
-
+```
 1. <p><em>By Susanna Miller, Campus Director</em></p>
 
 2. <p>You can find more information on our Meetup page: </p>
 
 3. <p>This week our students are jumping into JavaScript! As a primer our students watched a great talk by Gary Bernhardt called the <em><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">The Birth and Death of JavaScript</a> </em>during lunch on yesterday. I&#8217;m pretty sure they&#8217;ll be calling it YavaScript on and off for the next 11 weeks.</p>
+```
 
-
-
+```
 2.<h1>Header</h6>
-
-Name: Header Tag
-Symbol: <h1> thru </h6>
-meaning: Sets size of text from 1-6 range.
+```
+* Name: Header Tag
+* Symbol: h1 -h6 inside < >
+* meaning: Sets size of text from 1-6 range.
 
 url: http://orlando.theironyard.com/
 
 Examples:
 
+```
 1. h1><a href="/">The Iron Yard | Orlando</a></h1>
 
 2. <h2>Elsewhere</h2>
 
 3. <h3><strong>What would you build with a Code School scholarship to The Iron Yard?</strong></h3>
+```
 
-
-
+```
 3.<span>Span</span>
+```
 
-Name: Span Tag
-Symbol: <span></span>
-meaning: Used for grouping elements for styling purposes or because similar attribute values are shared.
+* Name: Span Tag
+* Symbol: span inside < >
+* meaning: Used for grouping elements for styling purposes or because similar attribute values are shared.
 
 url: http://orlando.theironyard.com/
 
 Examples:
 
+```
 1. <span class="icon">2</span>
 2.<span class="label">Copy short URL</span>
 3. <span class="icon">f</span>
-
+```
 
 
 4. <ul>unordered list</ul>
 
-Name: unordered lists
-Symbol: <ul> </ul>
-meaning: blocks off area to create an unordered list
+* Name: unordered lists
+* Symbol: <ul> </ul>
+* meaning: blocks off area to create an unordered list
 
 url : http://theironyard.com/
 
 Examples:
 
+```
  1. <ul>
                   <li><a href="/locations">Locations</a></li>
                   <li><a href="/academy">Academy</a></li>
@@ -87,20 +93,21 @@ Examples:
               <li><a href="http://vimeo.com/theironyard" class="ss-icon">vimeo	</a></li>
             </ul>	
 
+```
 
-
-
+```
 5.<footer>Footer</footer>
-
-Name: Footer Tag
-Symbol: <footer></footer>
-meaning: blocks off the footer element
+```
+* Name: Footer Tag
+* Symbol: <footer></footer>
+* meaning: blocks off the footer element
 
 
 url: http://orlando.theironyard.com/
 
 Examples:
 
+```
 1. <footer>
     <div class="footer-wrap content-wrap clearfix">
       <aside class="sidebar">
@@ -124,37 +131,40 @@ Url: http://theironyard.com/academy/
 2. <div class="footer">
 
 3. <div class="footer-nav">
+```
 
-
-
+```
 6.<article> Content Here</article>
+```
 
-Name: Article Tag
-Symbol: <article></article>
-meaning: blocks  off article content
+* Name: Article Tag
+* Symbol: <article></article>
+* meaning: blocks  off article content
 
 Url:  http://orlando.theironyard.com/
 
 Examples:
 
+```
 1. <article class="post type-text" id="100189034319"><div class="clearfix rte">
 
 2. <article class="post type-text" id="97086023659">
 
 3.  <article class="post type-text" id="98822138374"><div class="clearfix rte">
+```
 
-
-
+```
 7.<address> Contact Info</address>
-
-Name: Address Tag
-Symbol: <address></address>
-meaning: blocks of contact info
+```
+* Name: Address Tag
+* Symbol: <address></address>
+* meaning: blocks of contact info
 
 Examples:
 
 url: http://www.w3.org/MarkUp/html3/address.html
 
+```
 1. <PRE>&lt;ADDRESS&gt;
 Newsletter editor&lt;BR&gt;
 J.R. Brown&lt;BR&gt;
@@ -182,18 +192,20 @@ url: http://www.mediaevent.de/xhtml/address.html
 Neue Straße 117
 12345 Altheim
 </address> 
-
-
+```
+```
 8.<ol>Ordered List</ol>
+```
 
-Name: Ordered list
-Symbol: <ol> </ol>
-meaning: blocks off area to create an Ordered list
+* Name: Ordered list
+* Symbol: <ol> </ol>
+* meaning: blocks off area to create an Ordered list
 
 url: http://www.echoecho.com/htmllists02.htm
 
 Examples:
 
+```
 1. <ol>
 <li>text</li>
 <li>text</li>
@@ -203,18 +215,20 @@ Examples:
 2. <ol type="I">
 
 3. <ol type="I" start="7">
+```
 
-
+```
 9. <aside> side content</aside>
-
-Name: Aside Tag
-Symbol: <aside></aside>
-meaning: blocks off side content
+```
+* Name: Aside Tag
+* Symbol: <aside></aside>
+* meaning: blocks off side content
 
 Exmples:
 
 Url: http://orlando.theironyard.com/
 
+```
 1.    <aside class="sidebar">
         <div class="avatar-wrap">
           <a href="/"><img alt="The Iron Yard | Orlando" src="http://33.media.tumblr.com/avatar_31b8d8bf579d_64.png" /></a>
@@ -227,18 +241,22 @@ Url: http://orlando.theironyard.com/
 
 3. <aside class="metadata clearfix">
 
+```
 
+```
 10. <pre> formatted text</pre>
+```
 
-Name: Pre Tag
-Symbol: <pre></pre>
-meaning: preformatted text accepted between tags
+* Name: Pre Tag
+* Symbol: <pre></pre>
+* meaning: preformatted text accepted between tags
 
 
 Examples:
 
 Url: http://www.w3.org/MarkUp/html3/literal.html
 
+```
 1. <PRE>
        Higher still and higher
          From the earth thou springest
@@ -263,37 +281,73 @@ both      spaces and
 line breaks
 </pre>
 
+```
+
 10 MORE tags (20)
 
-11.<audio> sound her</audio>
+```
+11.<audio> sound here</audio>
+```
+This is used to embed sound into documents
 
+1.
+2.
+3.
 
+```
 12.<blockquote>  text for quotes here</blockquote>
+```
 
+This allows for visual render to show citation
 
+1.
+2.
+3.
+
+```
 13.<dd> Definiton Description here</dd>
+```
+
+This element indicated the description of a term ONLY to be used in a description list(dl)element.
 
 
+
+```
 14.<canvas> Drawing Canvas </canvas>
+ ```
+
+ This element can an be used to draw graphics via scripting (usually JavaScript)
 
 
+```
 15.<div> Document Division </div>
+```
+
+This element indicates the description of a term in a description list (<dl>) element. This element can occur only as a child element of a definition list and it must follow a <dt> element.
 
 
+```
 16.<figcaption> figure caption </figcaption>
+```
 
+This element represents a caption or legend associated with a figure
+or illustration.
 
+```
 17.<hgroup> Grouped header info</hgroup>
+```
 
-
+```
 18.<hr>Horizontal Rule</hr>
+```
 
-
+```
 19.<section>seperated section of page</section>
+```
 
-
+```
 20.<table> table here</table>
-
+```
 
 
 
