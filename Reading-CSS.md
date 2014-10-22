@@ -1,4 +1,6 @@
-<h1>CSS: Styles that effect the color of things</h1>
+===========================================
+CSS: Styles that effect the color of things
+===========================================
 
 1. background-color
 
@@ -19,5 +21,38 @@
 9. sepia()
 
 10. <gradient>
+
+=================
+10 MORE CSS Rules
+=================
+
+11. :active
+
+
+12. background-image
+
+
+13. clear
+
+
+14. display
+
+
+15. ex
+
+
+16. float
+
+
+17. height
+
+
+18. image()
+
+
+19. justify-content
+
+
+20. @keyframes
 
 
