@@ -195,3 +195,96 @@ CSS: Styles that effect the color of things
 
 ```
 
+```
+21. Position: static;
+```
+* This property is used to define whether a box is absolute, relative, static or fixed.
+
+```
+1. h1 {position: absolute}
+
+2. .class name {position: static}
+
+3. P {position: relative}
+
+```
+
+```
+22. FLoat: left
+```
+* Floating a box will shift it to the right or left of a line, with surrounding content flowing around it.
+
+
+```
+1. #navigation {
+    float: left;
+    width: 200px;
+}
+
+2. h4  { float: left;  margin: 0; }
+
+3. sidebar {
+  float: right;			
+}
+
+```
+
+```
+23. clear: both;
+```
+* property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
+
+
+1. #footer {
+    clear: both;
+}
+
+
+2. #container:after { 
+   content: "";
+   display: block; 
+   clear: both;
+}
+
+
+3. h2 { clear: right }
+
+```
+
+```
+24. display: block;
+```
+* Specifies the display type of a box.
+
+```
+1. .darwin { display: block; }
+
+2. .lamarck { display: none; }
+
+3. .linnaeus { display: table; }
+
+```
+
+```
+25. overflow: hidden
+```
+* specifies what should happen to the overflow - the portions of content that do not fit inside a box.
+
+```
+1. #content {
+	width: 500px;
+	overflow: hidden;
+}
+
+2. p {  
+     width: 12em;
+     height: 6em;
+     border: dotted;
+     overflow: visible; /* content is not clipped */ 
+}
+
+3. p { overflow: auto;
+
+```
+
+

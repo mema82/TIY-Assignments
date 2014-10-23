@@ -602,6 +602,111 @@ This represents data in two dimensions or more.
 
 ```
 
+```
+21. <form> </form>
+```
+
+* represents a document section that contains interactive controls to submit information to a web server.
+
+```
+1. <form action="">
+  <label for="GET-name">Name:</label>
+  <input id="GET-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
+
+2. <form action="" method="post">
+  <label for="POST-name">Name:</label>
+  <input id="POST-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
+
+3. <form action="" method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+  </fieldset>
+</form>
+
+```
+
+```
+22. <textarea>
+```
+* a large, multi-line textbox.
+
+```
+1. <textarea rows="5" cols="20">A big load of text</textarea>
+
+2. textarea {
+  resize: none;
+}
+
+3. <textarea cols="20" rows="5" wrap="hard">
+ As you can see many times word wrapping is often the desired look for your textareas. Since it makes everything nice and easy to read and preserves line breaks.
+</textarea>
+
+```
+
+```
+23. <select> </select>
+```
+* This makes drop down select boxes when used with option tag
+
+```
+1. <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option value="third option">Option 3</option>
+</select>
+
+2. <select name="select">
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+
+3. 
+<select name="dropdown">
+<option value="Data Structures" selected>Data Structures</option>
+<option value="Data Mining">Data Mining</option>
+</select>
+
+```
+
+```
+24. <img> 
+```
+* This represents an image of the document.
+
+```
+1. <img src="mdn-logo-sm.png" alt="MD Logo" />
+
+2. <a href="https://developer.mozilla.org/"><img src="mdn-logo-sm.png" alt="MDN Logo" /> </a>
+
+3. <img src="mdn-logo-sm.png" 
+      alt="MD Logo" 
+      srcset="mdn-logo-HD.png 2x, mdn-logo-small.png 15w, mdn-banner-HD.png 100w 2x" />
+
+```
+
+```
+25. <attr>
+```
+* This allows for additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.
+
+```
+1. <a href="http://www.w3schools.com">This is a link</a> 
+
+2. <img src="w3schools.jpg" width="104" height="142">
+
+3. <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+```
+
+
+
+
 
 
 
