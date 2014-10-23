@@ -353,30 +353,89 @@ This allows for visual render to show citation
 ```
 This element indicated the description of a term ONLY to be used in a description list(dl)element.
 
-1.
 
-2.
+1. <dl>
+    <dt>Mercury</dt>
+    <dd>Mercury (0.4 AU from the Sun) is the closest planet to the Sun and the smallest planet.</dd>
+    <dt>Venus</dt>
+    <dd>Venus (0.7 AU) is close in size to Earth, (0.815 Earth masses) and like Earth, has a thick silicate mantle around an iron core.</dd>
+    <dt>Earth</dt>
+    <dd>Earth (1 AU) is the largest and densest of the inner planets, the only one known to have current geological activity.</dd?>
+</dl>
 
-3.
+2. <dl>
+  <dt>Frog</dt>
+  <dd>Wet green thing</dd>
+  <dt>Rabbit</dt>
+  <dd>Warm fluffy thing</dd>
+</dl> 
 
+3. <dl>
+  <dt>Frog</dt>
+  <dd><p>Wet green thing that croaks.</p></dd>
+</dl>
 
 ```
-14.<canvas> Drawing Canvas </canvas>
+
+```
+14.<fieldset> Form </fieldset>
  ```
+
 ```
- This element can an be used to draw graphics via scripting (usually JavaScript)
+This is used to group several controls as well as labels within a web form
 
 
+ 1. <fieldset>
+    <legend>Title</legend>
+    <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+  </fieldset>
+
+
+ 2. <fieldset>
+ <legend>Poems</legend>
+<h2>20 pages of well written poems</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Cras nec diam eu lectus condimentum faucibus in et odio.</p>
+</fieldset>
+
+
+ 3. <form>
+  <fieldset>
+  <legend>Subscription info</legend>
+    <label for="name">Username:</label>
+    <input type="text" name="name" id="name" />
+    <br />
+    <label for="mail">E-mail:</label>
+    <input type="text" name="mail" id="mail" />
+    <br />
+    <label for="address">Address:</label>
+    <input type="text" name="address" id="address" size="40" />
+  </fieldset>
+</form>
 
 ```
 
 ```
 15.<div> Document Division </div>
 ```
+
 ```
-1.
-2.
-3.
+The generic container for flow content, which does not inherently represent anything.
+
+1. <div>
+  <p>Any kind of content here.</p>
+</div>
+
+
+2. <div id="body_content">
+  <h1>Page heading</h1>
+  <p>Body content</p>
+</div>
+
+
+3. div id="contentinfo">
+<p>Welcome to our website. We provide tutorials on various subjects.</p>
+</div>
 
 ```
 
@@ -389,19 +448,47 @@ This element indicated the description of a term ONLY to be used in a descriptio
 This element represents a caption or legend associated with a figure
 or illustration.
 
-1.
-2.
-3.
+1. <figure>
+  <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="An awesome picture">  
+  <figcaption>Caption for the awesome picture</figcaption>
+</figure>
+
+
+2. <figure>
+      <figcaption>Get browser details using navigator</figcaption>
+
+
+3. <figure>
+      <figcaption><cite>Edsger Dijkstra :-</cite></figcaption>
+      <p>"If debugging is the process of removing software bugs, <br /> then programming must be the process of putting them in"<br /></p>
+    </figure>
 
 
 ```
 17.<hgroup> Grouped header info</hgroup>
 ```
+This represents the heading of a section.
 
 ```
-1.
-2.
-3.
+
+1. <hgroup>
+  <h1>Main title</h1>
+  <h2>Secondary title</h2>
+</hgroup>
+
+
+2. <header>
+  <hgroup>
+    <h1><a href="/">Mini Apps</a></h1>
+    <h2>Web applications for iPhone, Android & other mobile platforms</h2>
+  </hgroup>
+</header>
+
+
+3. <hgroup>
+<h1>Talking Dogs</h1>
+<h2>Humans aren't the only talkers!</h2>
+</hgroup>
 
 
 ```
@@ -411,16 +498,109 @@ or illustration.
 ```
 
 ```
+This represents a thematic break between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section).
+
+
+1. p>This is the first paragraph of text. This is the first paragraph of text.
+  This is the first paragraph of text. This is the first paragraph of text.</p>
+
+<hr>
+
+<p>This is second paragraph of text. This is second paragraph of text.
+  This is second paragraph of text. This is second paragraph of text.</p>
+
+
+2. <hr />
+<p>1. "The Hobbit", JRR Tolkien.<br />
+2. "The Fellowship of the Ring" JRR Tolkien.</p>
+
+
+3. <p>And with that the actress and the bishop made their
+    eventful departure.</p>
+<hr/>
+<div id="footer">&copy; All content copyright 2007. Even
+    the unfunny stuff.</div>
+
+```
+
+```
 19.<section>seperated section of page</section>
+```
+
+```
+This seperates the section of a page
+
+1. <section>
+  <h1>Heading</h1>
+  <p>Bunch of awesome content</p>
+</section>
+
+2. <section id="content">
+      <h1>Heading</h1>
+      <div id="primary">
+         Some text goes here...
+      </div>
+   </section>
+
+3. <section>
+<h2>level of heading = section nesting level</h2>
+rest of the content
+</section>
+
 ```
 
 ```
 20.<table> table here</table>
 ```
 
+```
+This represents data in two dimensions or more.
 
+1. <table>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
 
+2. <table>
+  <tr>
+    <th>Account Type</th>
+    <th>Interest Rate</th>
+  </tr>
+  <tr>
+    <td>Smart</td>
+    <td>From 2%</td>
+  </tr>
+  <tr>
+    <td>Young Saver</td>
+    <td>From 1.6%</td>
+  </tr>
+</table>
 
+3. <table>
+  <tr>
+    <th>Question</th>
+    <th>Answer</th>
+    <th>Correct?</th>
+  </tr>
+  <tr>
+    <td>What is the capital of Burundi?</td>
+    <td>Bujumburra</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>What is the capital of France?</td>
+    <td>F</td>
+    <td>Erm... sort of</td>
+  </tr>
+</table>
+
+```
 
 
 

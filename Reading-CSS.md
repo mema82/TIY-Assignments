@@ -46,44 +46,152 @@ CSS: Styles that effect the color of things
 10 MORE CSS Rules
 =================
 
+```
 11. font : sans-serif
+```
+* declares a value of typography (i.e sans-serif) and/or size for the font
 
-* declares a value of sans-serif for the font
+```
+1. p{ font: sans-serif}
 
+
+2. p{ font: 14px}
+
+
+3. h1 {font: 35% sans serif}
+
+```
+
+```
 12. font-family: "Times New Roman, Arial Black"
-
+```
 * Allows for use of the declared font family in html
 
-13. font-weight: bold
+```
+1. p {font-family: 'Open Sans', sans-serif;}
 
+
+2. h1 {font-family: 'Great Vibes', cursive;}
+
+
+3. body{font-family: 'Aladin', cursive;}
+
+```
+
+```
+13. font-weight: bold
+```
 * applies a bold weight to font
 
-14. background-color: white;
+```
+1. P {font-weight: normal}
 
-* applies a color to the background
+2. h1 {font-weight: 300}
 
+3. h2 {font-weight: lighter}
+
+```
+
+```
+14. font-style: Palatino;
+```
+* applies a style to font
+
+```
+1. P {font-style: normal)
+
+
+2. h6 {font-style: italic}
+
+
+3. footer {font-style: oblique}
+
+```
+
+```
 15. line-height: 1.5
-
+```
 * applies a line height to the text
 
+```
+1. div {line-height: 1.2}
+
+2. .red {line-height: 1.2em}
+
+3. .box {line-height: 12pt}
+
+```
+
+```
 16. text-align: left;
+```
+* aligns desired text to the left, right, center
 
-* aligns desired text to the left
+```
+1. .class name {text-align: left}
 
+2. .class name {text-align: right}
+
+3. .class name {tet-align: center}
+
+```
+
+```
 17. white-space: pre;
+```
 
 * allows for preformatted text and accepts white space
 
+```
+1. white-space: normal
+
+2. white-space: nowrap
+
+3. white-space: pre-wrap
+
+```
+
+```
 18. text-decoration: underline;
+```
 
 * decorates the text with desired options including inherit, none, underline, overline, line-through
 
+```
+1. h1 {tect-decoration: underline}
+
+2. p {text-decoration: overline}
+
+3. a {text-decortion: none}
+
+```
+
+```
 19. outline: 2px solid red;
+```
 
 * adds an outline to declared element
 
+```
+1. :link:hover {outlinf: 1px solid #000}
+
+2. outline-style: dotted
+
+3. outline-style: inset
+
+```
+```
 20. height: 3em;
+```
 
 * specifies heigh of block box but not including padding, border or margin.
 
+```
+1. table {height: auto}
+
+2. img {height: 10em}
+
+3. form {height: inherit}
+
+```
 
