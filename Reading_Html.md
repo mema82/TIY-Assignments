@@ -312,7 +312,7 @@ line breaks
 ```
 
 ```
-This is used to embed sound into documents
+* This is used to embed sound into documents
 
 1.<audio autoplay="autoplay" controls="controls">  
    <source src="music.ogg" />  
@@ -332,7 +332,7 @@ This is used to embed sound into documents
 ```
 
 ```
-This allows for visual render to show citation
+* This allows for visual render to show citation
 
 1. <blockquote><p>This is a longer block quote.</p>
   <p>It uses paragraph elements.</p>
@@ -351,7 +351,7 @@ This allows for visual render to show citation
 ```
 
 ```
-This element indicated the description of a term ONLY to be used in a description list(dl)element.
+* This element indicated the description of a term ONLY to be used in a description list(dl)element.
 
 
 1. <dl>
@@ -382,7 +382,7 @@ This element indicated the description of a term ONLY to be used in a descriptio
  ```
 
 ```
-This is used to group several controls as well as labels within a web form
+* *This is used to group several controls as well as labels within a web form
 
 
  1. <fieldset>
@@ -419,9 +419,9 @@ This is used to group several controls as well as labels within a web form
 15.<div> Document Division </div>
 ```
 
-```
-The generic container for flow content, which does not inherently represent anything.
+* The generic container for flow content, which does not inherently represent anything.
 
+```
 1. <div>
   <p>Any kind of content here.</p>
 </div>
@@ -443,11 +443,10 @@ The generic container for flow content, which does not inherently represent anyt
 16.<figcaption> figure caption </figcaption>
 ```
 
-```
-
-This element represents a caption or legend associated with a figure
+* This element represents a caption or legend associated with a figure
 or illustration.
 
+```
 1. <figure>
   <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="An awesome picture">  
   <figcaption>Caption for the awesome picture</figcaption>
@@ -463,14 +462,14 @@ or illustration.
       <p>"If debugging is the process of removing software bugs, <br /> then programming must be the process of putting them in"<br /></p>
     </figure>
 
+```
 
 ```
 17.<hgroup> Grouped header info</hgroup>
 ```
-This represents the heading of a section.
+ * This represents the heading of a section.
 
 ```
-
 1. <hgroup>
   <h1>Main title</h1>
   <h2>Secondary title</h2>
@@ -479,7 +478,7 @@ This represents the heading of a section.
 
 2. <header>
   <hgroup>
-    <h1><a href="/">Mini Apps</a></h1>
+    <h1>Apps</h1>
     <h2>Web applications for iPhone, Android & other mobile platforms</h2>
   </hgroup>
 </header>
@@ -490,19 +489,20 @@ This represents the heading of a section.
 <h2>Humans aren't the only talkers!</h2>
 </hgroup>
 
-
 ```
 
 ```
 18.<hr>Horizontal Rule</hr>
 ```
 
+
+* This represents a thematic break between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section).
+
 ```
-This represents a thematic break between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section).
+1. 
+<hr>
+<p>This is the first paragraph of text. This is the first paragraph of text.</p>
 
-
-1. p>This is the first paragraph of text. This is the first paragraph of text.
-  This is the first paragraph of text. This is the first paragraph of text.</p>
 
 <hr>
 
@@ -553,9 +553,9 @@ rest of the content
 20.<table> table here</table>
 ```
 
-```
-This represents data in two dimensions or more.
+* This represents data in two dimensions or more.
 
+```
 1. <table>
   <tr>
     <td>John</td>
@@ -599,7 +599,6 @@ This represents data in two dimensions or more.
     <td>Erm... sort of</td>
   </tr>
 </table>
-
 ```
 
 ```
@@ -651,6 +650,7 @@ This represents data in two dimensions or more.
 ```
 23. <select> </select>
 ```
+
 * This makes drop down select boxes when used with option tag
 
 ```
