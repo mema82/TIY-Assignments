@@ -243,6 +243,14 @@ CSS: Styles that effect the color of things
 ```
 * This property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
 
+```
+1. h1 { clear: none }
+
+2. h2 { clear: right }
+
+3. h2 { clear: left }
+
+```
 
 ```
 24. footer {clear: both;}
@@ -254,13 +262,16 @@ CSS: Styles that effect the color of things
   Some copyright info or perhaps some author info for an article footer
 </footer>
 
-2. #container:after { 
-   content: "";
-   display: block; 
-   clear: both;
-}
+2. <footer class="site-footer">
+  I'm the Sticky Footer.
+</footer>
 
-3. h2 { clear: right }
+
+3. footer>
+  <p>Posted by: Hege Refsnes</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
 
 ```
 
