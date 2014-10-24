@@ -1,45 +1,54 @@
 ===========================================
 CSS: Styles that effect the color of things
 ===========================================
-
-1. background-color
-
+```
+1.  background-color
+```
 * adds color to background
 
-2. border-bottom-color
-
+```
+2.  border-bottom-color
+```
 * adds color to bottom border
 
-3. border-color
-
+```
+3.  border-color
+```
 * adds color to border
 
-4. border-left-color
-
+```
+4.  border-left-color
+```
 * adds color to left border
 
-5. text-color
-
+```
+5.  text-color
+```
 * adds color to text
 
-6. color 
-
+```
+6.  color 
+```
 * adds color to element called
 
-7. border-top-color
-
+```
+7.  border-top-color
+```
 * adds color to the top of border
 
-8. outline-color
-
+```
+8.  outline-color
+```
 * adds color to the outline of outlined elements
 
-9. border-top-color
-
+```
+9.  border-top-color
+```
 * adds color to the top border
 
+```
 10. border-right-color
-
+```
 * adds color to the righ of border
 
 =================
@@ -232,13 +241,18 @@ CSS: Styles that effect the color of things
 ```
 23. clear: both;
 ```
-* property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
+* This property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
 
 
-1. #footer {
-    clear: both;
-}
+```
+24. footer {clear: both;}
+```
+* This element represents a footer for its nearest sectioning content or sectioning root element.
 
+```
+1. <footer>
+  Some copyright info or perhaps some author info for an article footer
+</footer>
 
 2. #container:after { 
    content: "";
@@ -246,13 +260,12 @@ CSS: Styles that effect the color of things
    clear: both;
 }
 
-
 3. h2 { clear: right }
 
 ```
 
 ```
-24. display: block;
+25. display: block;
 ```
 * Specifies the display type of a box.
 
@@ -264,27 +277,4 @@ CSS: Styles that effect the color of things
 3. .linnaeus { display: table; }
 
 ```
-
-```
-25. overflow: hidden
-```
-* specifies what should happen to the overflow - the portions of content that do not fit inside a box.
-
-```
-1. #content {
-	width: 500px;
-	overflow: hidden;
-}
-
-2. p {  
-     width: 12em;
-     height: 6em;
-     border: dotted;
-     overflow: visible; /* content is not clipped */ 
-}
-
-3. p { overflow: auto;
-
-```
-
 
