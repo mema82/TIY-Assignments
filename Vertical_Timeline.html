@@ -6,178 +6,133 @@
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
     <style>
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+      	margin: 0;
+      	padding: 0;
+      	border: 0;
+      	font-size: 100%;
+      	font: inherit;
+      	vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+      	display: block;
+      }
+      * {
+        /*outline: 1px solid red;*/
+      }
+      body {
+        font-family: 'Lato', sans-serif;
+        background-color: 	#402D24;
+        line-height: 1.5;
+        position:relative;
+      }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
+      .time p {
+        margin-bottom: 0;
+        text-align: right;
+        margin-right: 40%;
+      }
+      .time {
+        margin-left: 8%;
+        line-height: 1;
+        float:left;
+        color: grey;
+        font-style: italic;
+      }
 
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+      .time h2 {
+        margin-top: 0;
+        font-size: 40px;
+        color: #ffffff;
+        font-style: normal;
+      }
 
- nav li { display: inline;}
+      .posts{
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 2%;
+        padding: 2% 4% 4% 4%;
+        background-color: #BCAE8B;
+      }
 
- nav {float:right;
- 	margin-right: 50px;
- 	color: #47a3da;
- }
+      .posts h1 {
+        border-bottom: 1px solid #0C0E29;
+        padding-bottom: 15px;
+        color: #402D24;
+        font-size: 30px;
+      }
+      .posts p{
+        color: 	#402D24;
+        font-size: 20px;
 
- #first {
- /*background-color: #6cbfee;*/
- /*border: 50px solid #6cbfee;*/
-max-width:60%;
- height:400px;
- border:6px;
- background-color:#6cbfee;
-border-radius: 5px;
-margin-top: 100px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
+      }
+
+      .posts::before {
+        content: '\25c0';
+        width: 10px;
+        font-size: 45px;
+        margin-left: -80px;
+        padding: 0;
+        margin-top: -200px;
+        color: #BCAE8B;
+      }
+
+      .timeline {
+        margin: 30px 0 0 0;
+        padding: 0;
+        list-style:none;
+        position: relative;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1%;
+        background: #A40000;
+        left: 20%;
+        margin-left: -10px;
+      }
+        .fa {
+        margin-left: 129.5%;
+        color: #402D24;
+        margin-top: -70px;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border: 10px solid 	#A40000;
+        padding: 1px;
+        padding-left: 8px;
+        padding-right: 0;
+        padding-top: 3px;
+        border-radius: 50%;
+        position: relative;
+   }
 
 
- }
-
-#second {
-
-	background-color: #47a3da;
-	max-width:60%;
- height:400px;
- border:6px;
- background:#6cbfee;
-border-radius: 5px;
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
-
-}
-
-#third {
- 	background-color: #6cbfee;
- 	max-width:60%;
- height:400px;
- border:6px;
- background:#6cbfee;
-border-radius: 5px;
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
-
- }
-
- #fourth {
-
-	background-color: #47a3da;
- 	max-width:60%;
- height:400px;
- border:6px;
- background:#6cbfee;
-border-radius: 5px;
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
-
-}
-
-#fifth {
- background-color: #6cbfee;
- max-width:60%;
- height:400px;
- border:6px;
- background:#6cbfee;
-border-radius: 5px;
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
-
- }
-
-#sixth{
-
-	background-color: #47a3da;
-	max-width:60%;
- height:400px;
- border:6px;
- background:#6cbfee;
-border-radius: 5px;
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
-
-}
-
-#seventh{
-
- background-color: #6cbfee;
- max-width:60%;
- height:400px;
- border:6px;
- background:#6cbfee;
-border-radius: 5px;
-margin-top: 15px;
-margin-bottom: 20px;
-margin-left: 325px;
-background-position: relative;
-
- }
-
-.title{
-
-	color: #ffffff;
-	font-weight: bold;
-}
-
-p {color: white;
-font-size: 18px;}
-
-  </style>
+    </style>
 
 
 <script> 
@@ -186,11 +141,11 @@ src="lodash.js">
 
 
 <body>
+
+
 <header>
 <h4>BLUEPRINT</h4>
-
 <h2> Vertical Timeline</h2>
-
 </header>
 
 <nav>
@@ -198,72 +153,114 @@ src="lodash.js">
 
 	<p span class="fa fa-arrow-circle-o-right"></span></p>
 
-	<p span class="fa fa-github-alt"></span></p>
-
-	<p span class="fa fa-envelope"></span></p>
-
 </nav>
 
+<article>
 
-</header>
+      <ul class="timeline">
 
-<article id="first">
+        <li>
 
-<h1 class="title"> Ricebean black-eyed pea</h1>
-<hr>
-<p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi</p>
+          <aside class ="time">
+            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
+            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
+            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
+          </aside>
 
-</article>
+          <section class="posts">
 
-<article id="second">
+            <h1> Brew-tilly Speak </h1>
 
-<h1 class="title"> Greens radish arugula</h1>
-<hr>
-<p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+            <p> Lungo americano filter, sugar et galão, mug robust spoon, whipped, latte dark, robust, mug, fair trade spoon, con panna galão espresso, dark decaffeinated dripper half and half arabica. Single shot americano bar eu cream seasonal caffeine variety grounds, shop turkish grinder bar, wings lungo aroma that caffeine, half and half, cup, filter whipped blue mountain qui turkish brewed. Est skinny coffee, steamed half and half trifecta coffee, kopi-luwak, trifecta seasonal froth percolator, macchiato, caffeine coffee sugar lungo, café au lait froth instant froth turkish. Blue mountain, chicory skinny pumpkin spice whipped carajillo blue mountain percolator extraction ut java aroma mazagran, percolator medium crema mocha acerbic mazagran ut organic. 
+            </p>
 
-</article>
+          </section>
 
-<article id="third">
+        </li>
 
-<h1 class="title"> Sprout garlic kohlrabi</h1>
-<hr>
-<p>CParsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+        <li>
 
-</article>
+          <aside class ="time">
+            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
+            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
+            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
+          </aside>
+          </aside>
 
-<article id="fourth">
+          <section class="posts">
 
-<h1 class="title"> Watercress ricebean</h1>
-<hr>
-<p>Peanut gourd nori welsh onion rock melon mustard jícama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot.</p>
+            <h1> Big Beans </h1>
 
-</article>
+            <p> Coffee, latte chicory cultivar lungo, caffeine, at body coffee fair trade caffeine robusta mazagran aromatic variety arabica, latte, cinnamon cortado whipped so ristretto eu saucer. Organic, filter cappuccino, dripper doppio at, caffeine filter kopi-luwak, breve roast cup whipped saucer caffeine cultivar, french press half and half, carajillo cinnamon robusta dark coffee, strong est steamed saucer, cup filter and aged acerbic. As, trifecta grinder spoon doppio macchiato robust, spoon, robusta, cinnamon, percolator, cup id acerbic et aftertaste beans bar organic plunger pot extra. Ristretto affogato, aftertaste, cinnamon affogato flavour cream spoon fair trade filter robusta, breve caffeine french press strong crema in white steamed, robust java caffeine cup organic. 
 
-<article id="fifth">
+            </p>
 
-<h1 class="title"> Courgette daikon</h1>
-<hr>
-<p>Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.</p>
+          </section>
 
-</article>
+        </li>
 
-<article id="sixth">
+        <li>
 
-<h1 class="title"> Greens radish arugula</h1>
-<hr>
-<p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+          <aside class ="time">
+            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
+            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
+            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
+          </aside>
+          </aside>
 
-</article>
+          <section class="posts">
 
-<article id="seventh">
+            <h1> From the ground up</h1>
 
-<h1 class="title"> Greens radish arugula</h1>
-<hr>
-<p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+            <p> Bar turkish, aged iced, bar, rich pumpkin spice, brewed robust, café au lait aroma, turkish qui iced aftertaste, carajillo kopi-luwak, qui cappuccino carajillo latte blue mountain, turkish, qui, americano foam arabica, strong coffee, americano id robust con panna macchiato frappuccino ristretto. Black variety irish, so pumpkin spice coffee, shop beans, dripper, café au lait strong carajillo espresso milk mazagran, cortado aromatic, siphon cup percolator at id flavour qui, carajillo sweet cream americano froth turkish, cup latte americano siphon roast. Seasonal ristretto, extraction coffee grounds that, affogato whipped aftertaste whipped breve, redeye skinny, caffeine, ristretto black, foam dripper caramelization irish et kopi-luwak robusta filter, that instant skinny mazagran, cream latte ut instant aftertaste. 
 
-</article>
+            </p>
+
+          </section>
+
+          <li>
+
+          <aside class ="time">
+            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
+            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
+            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
+          </aside>
+         
+			<section class="posts">
+
+            <h1> Grande Latte </h1>
+
+            <p> Dark seasonal sugar cup caramelization qui cultivar, kopi-luwak et cup filter java froth, as, acerbic filter robust café au lait robust roast. Foam brewed sugar as, coffee fair trade, aromatic and plunger pot, macchiato single origin, breve, cream organic and, cinnamon body, irish cultivar, cortado, aged, shop grinder single shot, aromatic, arabica beans id sweet ristretto carajillo. Beans trifecta robusta and, milk foam chicory, filter, breve to go, extraction kopi-luwak wings strong, extra white, seasonal robusta, to go affogato viennese frappuccino barista. Macchiato galão mocha wings dripper, single shot single origin strong acerbic extraction flavour carajillo coffee acerbic so aromatic spoon, est, caffeine, galão shop chicory affogato coffee that acerbic decaffeinated americano so body. 
+
+            </p>
+
+          </section>
+
+           <li>
+
+          <aside class ="time">
+            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
+            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
+            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
+          </aside>
+
+          <section class="posts">
+
+            <h1> Fresh Smells </h1>
+
+            <p> Cinnamon café au lait, espresso frappuccino crema beans, strong aged skinny redeye cream, as, chicory extraction qui americano sit redeye, cappuccino aged iced ristretto doppio coffee sweet crema. Filter and cappuccino, variety black kopi-luwak, americano, redeye extra, aged trifecta crema aroma steamed breve, qui doppio café au lait barista caffeine, cinnamon single origin, pumpkin spice frappuccino whipped ut so single shot doppio single shot grounds cultivar. Bar trifecta froth dark milk a, half and half filter con panna siphon, redeye latte seasonal french press, so siphon saucer kopi-luwak caffeine. 
+
+            </p>
+
+          </section>
 
 
+        </li>
 
-</body>
+      </ul>
+
+      	</article>
+
+  </body>
+
 </html>
