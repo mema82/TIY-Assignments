@@ -1,0 +1,198 @@
+<!DOCTYPE>
+
+<html>
+<head>
+
+</head>
+
+
+<style>
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ nav li { display: inline;}
+
+# menu {
+	font-weight: bold;
+	color: #808080;
+
+ }
+
+
+#nav{
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    float:center; 
+    width:100%;
+   
+}
+#nav li{
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+#nav a{
+    display:block;
+    padding:5px;
+    color:#fff;
+    background:#47a3da;
+    text-decoration:none;
+}
+#nav a:hover{
+    background:#47a3da;
+    text-decoration:none;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+    background:#47a3da; /* Using this to create an illusion of a SOLID blue background for now. Researching how to make a uniformed solid blue black similar to site recreating. Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* This hides my dropdown menu off screen when main menu is Not selected*/
+}
+#nav ul li{
+    padding-top:15px; /* This spaces the li in my drop down */
+
+}
+#nav ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* This leaves the MENU tab selected even when my dropdown is on... */
+    text-decoration:underline;
+}
+
+#nav li:hover ul a{ /* removes underline default */
+    text-decoration:none;
+}
+
+	
+</style>
+
+
+<body>
+
+<section> 
+<ul id="nav">
+    <li>
+        <a href="#">Products</a>
+
+        	<ul>
+
+       <h1><li><a href="#">Learning and Games</a></li></h1>
+            <li><a href="#">Catch the Bullet</a></li>
+            <li><a href="#">Snoopydoo</a></li>
+			<li><a href="#">Fallen Angel</a></li>
+			<li><a href="#">Sui Maker</a></li>
+			<li><a href="#">Wave Master</a></li>
+			<li><a href="#">Golf Pro</a></li>
+        </ul>
+
+    </li>
+
+
+    <li>
+        <a href="#">Downloads</a>
+
+        <ul>
+
+       <h1><li><a href="#">Education and Learning</a></li></h1>
+            <li><a href="#">Learn Thai</a></li>
+            <li><a href="#">Math Genius</a></li>
+			<li><a href="#">chemoKid</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="#">Applications</a>
+
+        <ul>
+        	<h1><li><a href="#">Learning and Games</a></li></h1>
+            <li><a href="#">Catch the Bullet</a></li>
+            <li><a href="#">Snoopydoo</a></li>
+        </ul>
+
+    </li>
+    <li>
+        <a href="#">Projects</a>
+        <ul>
+            <h1><li><a href="#">Learning and Games</a></li></h1>
+            <li><a href="#">Catch the Bullet</a></li>
+            <li><a href="#">Snoopydoo</a></li>
+			<li><a href="#">Fallen Angel</a></li>
+			<li><a href="#">Sui Maker</a></li>
+            <li><a href="#">Wave Master</a></li>
+			<li><a href="#">Gold Pro</a></li>
+		</ul>
+    </li>
+
+    <li>
+        <a href="#">Freeware</a>
+
+         <ul>
+            <h1><li><a href="#">Utilities</a></li></h1>
+            <li><a href="#">Green Tree Pro</a></li>
+            <li><a href="#">Wobbler 3.0</a></li>
+			<li><a href="#">Cool Kid</a></li>
+		</ul>
+    </li>
+
+
+</section>
+
+
+
+</body>
+
+</html>
