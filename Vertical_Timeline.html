@@ -1,266 +1,85 @@
-<!DOCTYPE>
-
+<!doctype html>
 <html>
   <head>
-    <title>BLUEPRINT Vertical Timeline</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="vertical-timeline.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <ol class="timeline">
+        <li class="call">
+          <time><small>4/10/13</small> <big>18:30</big></time>
+          <article>
+            <h3>Braiiinnnssss</h3>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
-    <style>
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-      html, body, div, span, applet, object, iframe,
-      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-      a, abbr, acronym, address, big, cite, code,
-      del, dfn, em, img, ins, kbd, q, s, samp,
-      small, strike, strong, sub, sup, tt, var,
-      b, u, i, center,
-      dl, dt, dd, ol, ul, li,
-      fieldset, form, label, legend,
-      table, caption, tbody, tfoot, thead, tr, th, td,
-      article, aside, canvas, details, embed,
-      figure, figcaption, footer, header, hgroup,
-      menu, nav, output, ruby, section, summary,
-      time, mark, audio, video {
-      	margin: 0;
-      	padding: 0;
-      	border: 0;
-      	font-size: 100%;
-      	font: inherit;
-      	vertical-align: baseline;
-      }
-      /* HTML5 display-role reset for older browsers */
-      article, aside, details, figcaption, figure,
-      footer, header, hgroup, menu, nav, section {
-      	display: block;
-      }
-      * {
-        
-      }
-      body {
-        font-family: 'Lato', sans-serif;
-        background-color: #402D24;
-        line-height: 1.5;
-        position:relative;
-      }
-
-      .time p {
-        margin-bottom: 0;
-        text-align: right;
-        margin-right: 40%;
-      }
-      .time {
-        margin-left: 8%;
-        line-height: 1;
-        float:left;
-        color: grey;
-        font-style: italic;
-      }
-
-      .time h2 {
-        margin-top: 0;
-        font-size: 40px;
-        color: #ffffff;
-        font-style: normal;
-      }
-
-      .posts{
-        width: 60%;
-        margin-left: 25%;
-        margin-top: 2%;
-        padding: 2% 4% 4% 4%;
-        background-color: #BCAE8B;
-      }
-
-      .posts h1 {
-        border-bottom: 1px solid #0C0E29;
-        padding-bottom: 15px;
-        color: #402D24;
-        font-size: 30px;
-      }
-      .posts p{
-        color: 	#402D24;
-        font-size: 20px;
-
-      }
-
-      .posts::before {
-        content: '\25c0';
-        width: 10px;
-        font-size: 45px;
-        margin-left: -80px;
-        padding: 0;
-        margin-top: -200px;
-        color: #BCAE8B;
-      }
-
-      .timeline {
-        margin: 30px 0 0 0;
-        padding: 0;
-        list-style:none;
-        position: relative;
-      }
-
-      .timeline::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 1%;
-        background: #A40000;
-        left: 20%;
-        margin-left: -10px;
-      }
-        .fa {
-        margin-left: 129.5%;
-        color: #402D24;
-        margin-top: -70px;
-        background-color: white;
-        width: 50px;
-        height: 50px;
-        border: 10px solid 	#A40000;
-        padding: 1px;
-        padding-left: 8px;
-        padding-right: 0;
-        padding-top: 3px;
-        border-radius: 50%;
-        position: relative;
-   }
-
-
-    </style>
-
-
-<script> 
-src="lodash.js">
-</script>
-
-
-<body>
-
-
-<header>
-<h4>BLUEPRINT</h4>
-<h2> Vertical Timeline</h2>
-</header>
-
-<nav>
-	<p span class="fa fa-arrow-circle-o-left"></span></p>
-
-	<p span class="fa fa-arrow-circle-o-right"></span></p>
-
-</nav>
-
-<article>
-
-      <ul class="timeline">
-
-        <li>
-
-          <aside class ="time">
-            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
-            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
-            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
-          </aside>
-
-          <section class="posts">
-
-            <h1> Brew-tilly Speak </h1>
-
-            <p> Lungo americano filter, sugar et galão, mug robust spoon, whipped, latte dark, robust, mug, fair trade spoon, con panna galão espresso, dark decaffeinated dripper half and half arabica. Single shot americano bar eu cream seasonal caffeine variety grounds, shop turkish grinder bar, wings lungo aroma that caffeine, half and half, cup, filter whipped blue mountain qui turkish brewed. Est skinny coffee, steamed half and half trifecta coffee, kopi-luwak, trifecta seasonal froth percolator, macchiato, caffeine coffee sugar lungo, café au lait froth instant froth turkish. Blue mountain, chicory skinny pumpkin spice whipped carajillo blue mountain percolator extraction ut java aroma mazagran, percolator medium crema mocha acerbic mazagran ut organic. 
+            <p>
+           Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth elive ingdead.
             </p>
-
-          </section>
-
+          </article>
         </li>
+        <li class="flight">
+          <time><small>4/11/13</small> <big>12:04</big></time>
+          <article>
+            <h3>Rotting</h3>
 
-        <li>
-
-          <aside class ="time">
-            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
-            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
-            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
-          </aside>
-          </aside>
-
-          <section class="posts">
-
-            <h1> Big Beans </h1>
-
-            <p> Coffee, latte chicory cultivar lungo, caffeine, at body coffee fair trade caffeine robusta mazagran aromatic variety arabica, latte, cinnamon cortado whipped so ristretto eu saucer. Organic, filter cappuccino, dripper doppio at, caffeine filter kopi-luwak, breve roast cup whipped saucer caffeine cultivar, french press half and half, carajillo cinnamon robusta dark coffee, strong est steamed saucer, cup filter and aged acerbic. As, trifecta grinder spoon doppio macchiato robust, spoon, robusta, cinnamon, percolator, cup id acerbic et aftertaste beans bar organic plunger pot extra. Ristretto affogato, aftertaste, cinnamon affogato flavour cream spoon fair trade filter robusta, breve caffeine french press strong crema in white steamed, robust java caffeine cup organic. 
-
+            <p>
+            Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. 
             </p>
-
-          </section>
-
+          </article>
         </li>
+        <li class="todo">
+          <time><small>4/13/13</small> <big>05:36</big></time>
+          <article>
+            <h3>Bloody Guts</h3>
 
-        <li>
-
-          <aside class ="time">
-            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
-            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
-            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
-          </aside>
-          </aside>
-
-          <section class="posts">
-
-            <h1> From the ground up</h1>
-
-            <p> Bar turkish, aged iced, bar, rich pumpkin spice, brewed robust, café au lait aroma, turkish qui iced aftertaste, carajillo kopi-luwak, qui cappuccino carajillo latte blue mountain, turkish, qui, americano foam arabica, strong coffee, americano id robust con panna macchiato frappuccino ristretto. Black variety irish, so pumpkin spice coffee, shop beans, dripper, café au lait strong carajillo espresso milk mazagran, cortado aromatic, siphon cup percolator at id flavour qui, carajillo sweet cream americano froth turkish, cup latte americano siphon roast. Seasonal ristretto, extraction coffee grounds that, affogato whipped aftertaste whipped breve, redeye skinny, caffeine, ristretto black, foam dripper caramelization irish et kopi-luwak robusta filter, that instant skinny mazagran, cream latte ut instant aftertaste. 
-
-            </p>
-
-          </section>
-
-          <li>
-
-          <aside class ="time">
-            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
-            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
-            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
-          </aside>
-         
-			<section class="posts">
-
-            <h1> Grande Latte </h1>
-
-            <p> Dark seasonal sugar cup caramelization qui cultivar, kopi-luwak et cup filter java froth, as, acerbic filter robust café au lait robust roast. Foam brewed sugar as, coffee fair trade, aromatic and plunger pot, macchiato single origin, breve, cream organic and, cinnamon body, irish cultivar, cortado, aged, shop grinder single shot, aromatic, arabica beans id sweet ristretto carajillo. Beans trifecta robusta and, milk foam chicory, filter, breve to go, extraction kopi-luwak wings strong, extra white, seasonal robusta, to go affogato viennese frappuccino barista. Macchiato galão mocha wings dripper, single shot single origin strong acerbic extraction flavour carajillo coffee acerbic so aromatic spoon, est, caffeine, galão shop chicory affogato coffee that acerbic decaffeinated americano so body. 
-
-            </p>
-
-          </section>
-
-           <li>
-
-          <aside class ="time">
-            <p><time datetime="2013-04-10 18:30">4/10/13</time></p>
-            <h2><time datetime="2013-04-10 18:30">18:30</time></h2>
-            <div><i class="fa fa-hand-o-right fa-3x"></i></div>
-          </aside>
-
-          <section class="posts">
-
-            <h1> Fresh Smells </h1>
-
-            <p> Cinnamon café au lait, espresso frappuccino crema beans, strong aged skinny redeye cream, as, chicory extraction qui americano sit redeye, cappuccino aged iced ristretto doppio coffee sweet crema. Filter and cappuccino, variety black kopi-luwak, americano, redeye extra, aged trifecta crema aroma steamed breve, qui doppio café au lait barista caffeine, cinnamon single origin, pumpkin spice frappuccino whipped ut so single shot doppio single shot grounds cultivar. Bar trifecta froth dark milk a, half and half filter con panna siphon, redeye latte seasonal french press, so siphon saucer kopi-luwak caffeine. 
-
-            </p>
-
-          </section>
-
-
+          <p>
+          Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?
+          </p>
+          </article>
         </li>
+        <li class="email">
+          <time><small>4/15/13</small> <big>13:15</big></time>
+          <article>
+            <h3>Dead Humans</h3>
 
-      </ul>
+            <p>
+            In Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum. Golums, zombies unrelenting et Raimi fascinati beheading. Maleficia! Vel cemetery man a modern bursting eyeballs perhsaps morbi. A terrenti flesh contagium. Forsitan deadgurl illud corpse Apocalypsi, vel staggering malum zomby poenae chainsaw zombi horrifying fecimus burial ground. Indeflexus shotgun coup de poudre monstra per plateas currere. Fit de decay nostra carne undead. Poenitentiam violent zom biehig hway agite RE:dead pœnitentiam! Vivens mortua sunt apud nos night of the living dead.
+            </p>
+          </article>
+        </li>
+        <li class="call">
+          <time><small>4/16/13</small> <big>21:30</big></time>
+          <article>
+            <h3>Evil Kittens</h3>
 
-      	</article>
+            <p>
+            Whyt zomby Ut fames after death cerebro virus enim carnis grusome, viscera et organa viventium. Sicut spargit virus ad impetum, qui supersumus flesh eating. Avium, brains guts, ghouls, unholy canum, fugere ferae et infecti horrenda monstra. Videmus twenty-eight deformis pale, horrenda daemonum. 
+            </p
+          </article>
+        </li>
+        <li class="flight">
+          <time><small>4/17/13</small> <big>12:11</big></time>
+          <article>
+          <h3>Possesed Dogs</h3>
 
+          <p>
+          Panduntur brains portae rotting inferi. Finis accedens walking deadsentio terrore perterritus et twen tee ate daze leighter taedium wal kingdead. The horror, monstra epidemic significant finem. Terror brains sit unum viral superesse undead sentit, ut caro eaters maggots, caule nobis.
+          </p>
+          </article>
+        </li>
+        <li class="todo">
+          <time><small>4/18/13</small> <big>09:56</big></time>
+          <article>
+            <h3>Long Nails</h3>
+
+            <p>
+            Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.
+            </p>
+          </article>
+        </li>
+      </ol>
+    </div>
   </body>
-
 </html>
