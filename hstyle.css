@@ -1,0 +1,11 @@
+}
+ul.menu > li {
+  margin: 0;
+  padding: 2ex 0; padding-left: 3em;
+  border-bottom: 1pt solid blue;
+}
+
+.open {
+  background: blue;
+  color: white;
+}
