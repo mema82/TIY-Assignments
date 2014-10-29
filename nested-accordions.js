@@ -1,5 +1,3 @@
-/*JS*/
-
 function addOpenClass(element){
   element.className = 'accordion-open';
 }
