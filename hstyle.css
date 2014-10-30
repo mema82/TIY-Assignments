@@ -22,7 +22,7 @@ li {
 ul.menu > li {
   margin: 0;
   padding: 2ex 0; padding-left: 3em;
-  border-bottom: 2pt solid blue;
+  border-bottom: 2pt solid #47a3da;
 
 }
 
@@ -30,20 +30,19 @@ ul.menu h4 {
   font-size: 130%;
   line-height: 3ex;
   font-weight: normal;
-  color: lightblue;
+  color: #47a3da;
 
 }
 
 ul.menu ul {
   margin: 1ex 0;
 
-
 }
 
 
 .open {
   
-  color: rgb(160, 160, 160);
+  color: #47a3da;
 
 
 }
@@ -58,7 +57,7 @@ ul.menu ul {
 
 li.open {
 
-	border-bottom: 2px solid #47a3da;
+	border-bottom: 4px solid #47a3da;
 
 
 }
@@ -71,8 +70,18 @@ h3 a {
 }
 
 h3 a:hover {
-	color:lightblue;
+	color: #47a3da;
 }
+
+
+.submenu li a{
+
+	 text-decoration: none;
+
+}
+
+
+
 
 
 
