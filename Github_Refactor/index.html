@@ -1,0 +1,236 @@
+<!--Weekend Assignment Head Start-->
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekend HeadStart</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+
+</head>
+
+<style>
+
+body >.container > * {
+	outline: 1pt solid red;
+}
+
+
+.stalk {
+	list-style-type: none;
+	
+}
+
+
+.glyphicon-envelope {
+
+	padding-right: 4px;
+}
+
+.joined {
+
+margin-top:-20px;
+padding-left:15px;
+
+
+}
+
+.navbar-form .form-control{
+
+width: 350px;
+height:25px;
+}
+
+
+.menu {
+
+display: inline-block;
+margin-bottom: -15px;
+
+
+}
+
+.menu li {
+
+	float:left;
+	padding-left: 40px;
+	display: inline-block;
+	margin-right: 40px;
+
+}
+
+
+.popular {
+
+padding-left:10px;
+
+}
+
+
+.tabs {
+
+	list-style-type: none;
+	float:left;
+
+}
+
+#signin{
+
+background-color: #60b044;
+}
+
+
+.list-inline {
+
+	padding-top: 14px;
+
+}
+
+.mega-octicon {
+
+	padding-right: 20px;
+	
+}
+
+.sign-up {
+
+	background-color: #5ca941;
+
+
+}
+
+.btn{
+
+	float:right;
+}
+
+ .container {
+        margin: 0 0 0 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+      }
+
+.btn-default {
+      margin-right:15px;
+}
+
+</style>
+
+
+<body>
+
+<!--Start Navigation Bar and Elements-->
+<div class="container">
+      <div class="container">
+        <nav class="navbar navbar-default">
+
+<a class="navbar-brand" href="#"><span class="mega-octicon octicon-logo-github"></span></a>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+          <input type="text" class="form-control search" placeholder="Search Github">
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+    
+         <button type="submit" class="btn btn-default sign-up">Sign Up</button>
+         <button type="submit" class="btn btn-default sign-in">Sign In</button>
+         </div>
+          </div>
+        </nav>
+      </div>
+
+<!--END Navigation Bar and Elements-->
+
+<!--START ASIDE-->
+
+   <div class="container">
+
+			<div class="container"> 
+ 
+		<aside class="col-sm-4 col-md-4">
+
+			<h1> Octocat Dynamically goes here</h1>
+			<h3>Melissa Malpica <br>
+				mema82</h3>
+
+			<hr>
+
+			<span class="glyphicon glyphicon-envelope"></span><a href="http://www.malpicadz@gmail.com">malpicadz@gmail.com</a> 
+
+			<br>
+
+			<span class="glyphicon glyphicon-time"></span>
+			<h5 class="joined">Joined on Sep 20, 2014</h5>
+
+			<hr>
+           
+		<ul class="nav nav-tabs nav-justified" role="tablist">
+			<li>1 Follower</li>
+			<li>1 Starred</li>
+			<li>0 Following</li>
+		</li>
+	</ul>
+
+	<hr>
+
+	<h5>Organizations<h5>
+
+	<p><a href="https://github.com/TheIronYard--Orlando"><img src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84"></img></a></p>
+		
+		</aside>
+
+<!--END ASIDE-->
+
+<!--START Repo Tabs-->
+
+
+<section class="col-sm-8 col-md-8">
+
+<ul class="nav nav-tabs" role="tablist">
+
+  <li role="presentation" class="active"><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+
+  <li role="presentation"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+
+  <li role="presentation"><a href="#"><span class="octicon octicon-rss">Public activity</a></li>
+</ul>
+
+<!--END Repo Tabs-->
+<!--
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+;(function() {
+
+	var profile;
+	jQuery.ajax('octocat.json', {
+
+		success: function(data){
+
+			console.log(data);
+
+			var avatar_url = data.avatar_url;
+
+
+			jQuery('#avater').attr('href' , avatar_url)
+			.children('img').attr('src' , avatar_url)
+		}
+
+
+	});
+	
+}) ();
+
+</script>
+
+</body>
+</html>
