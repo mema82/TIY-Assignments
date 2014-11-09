@@ -132,7 +132,7 @@ ul {
 .new {
 
 background-color: #60b044;
-margin-top: -42px;
+margin-top: -38px;
 }
 
  .reposearch{
@@ -145,6 +145,19 @@ margin-top: -42px;
 
 }
 
+#contrib {
+
+}
+
+.footer {
+
+	display: inline-block;
+}
+
+.info > li {
+       display: list-item;
+            }
+
 </style>
 
 
@@ -152,6 +165,8 @@ margin-top: -42px;
 
 <!--Start Navigation Bar and Elements-->
 <div class="container">
+<header class ="row">
+
       <div class="container">
         <nav class="navbar navbar-default">
 
@@ -171,47 +186,33 @@ margin-top: -42px;
          <button type="submit" class="btn btn-default sign-up">Sign Up</button>
          <button type="submit" class="btn btn-default sign-in">Sign In</button>
          </div>
-          </div>
-        </nav>
-      </div>
-
+      
+</nav>
+</header>
 <!--END Navigation Bar and Elements-->
 
 <!--START ASIDE-->
 
-   <div class="container">
+  <div class="container content">
+        <div class="container">
+          <aside class="col-sm-3 col-md-3">
+            <a href="https://avatars3.githubusercontent.com/u/8843789?v=3&s=460" class="thumbnail" id="avatar"><img src="https://avatars3.githubusercontent.com/u/8843789?v=3&amp;s=460"alt=""></a>
 
-			<div class="container"> 
- 
-		<aside class="col-sm-4 col-md-4">
+        <h3 class="name">{{name}}</h3>
+        <h4 class="user">{{login}}</h4>
+    <hr>
+    <ul class="info list-unstyled">
+      
+       <li class="email octicon octicon-mail"><a href="">{{email}}</a></li>
 
-			<h1> Octocat Dynamically goes here</h1>
-			<h3>Melissa Malpica <br>
-				mema82</h3>
+       <li class="created octicon octicon-clock">{{created}}</li>
+            </ul>
+    <hr>
+            <p><a href="#">1 Follower</a> 
+            	<a href="">1 Starred</a> 
+            	<a href="">0 Following</a></p>
 
-			<hr>
-
-			<span class="glyphicon glyphicon-envelope"></span><a href="http://www.malpicadz@gmail.com">malpicadz@gmail.com</a> 
-
-			<br>
-
-			<span class="glyphicon glyphicon-time"></span>
-			<h5 class="joined">Joined on Sep 20, 2014</h5>
-
-			<hr>
-           
-		<ul class="nav nav-tabs nav-justified" role="tablist">
-			<li>1 Follower</li>
-			<li>1 Starred</li>
-			<li>0 Following</li>
-		</li>
-	</ul>
-
-	<hr>
-
-	<h5>Organizations<h5>
-
-	<p><a href="https://github.com/TheIronYard--Orlando"><img src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84"></img></a></p>
+    <hr>
 		
 		</aside>
 
@@ -220,7 +221,7 @@ margin-top: -42px;
 
 <!--START Tabbed Navigation 3x-->
 
-<section class="col-sm-8 col-md-8">
+<section class="col-sm-9 col-md-9">
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
@@ -275,10 +276,30 @@ margin-top: -42px;
 
 </ul>
 
+   <section class="col-sm-4 col-md-8">
+	<h5>Repositories contributed to</h5>
 
-    </div>
+<ul>
+   <li><span class="octicon octicon-repo"></span><a href="https://github.com/TheIronYard--Orlando/FEE--2014--FALL"<li>TheIronYard--/FEE--2014--FALL</li></a>
+    <byline>The Handbook for the Front End Engineering class of the Fall 2014 cohort at The Iron Yard, Orlando Campus</byline>
+</ul>
+
+<ul>
+	<li><span class="octicon octicon-repo"></span><a href="https://github.com/asoper29/24--Weekend-Warriors"<li>asoper29/24--Weekend-Warriors</li></a>
+
+</ul>
+ </div>
+
+
+
+
+
 
 <!-- END "Contributions" Tab down content-->
+
+
+
+
 
 <!-- START "Repositories" Tab down content-->
 
@@ -288,63 +309,55 @@ margin-top: -42px;
 
 <a class="navbar-brand" href="#"></a>
           <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-          <input type="text" class="form-control search" placeholder="Find a repository">
-
-           <button type="submit" class="btn btn-default reposearch"></span>Search</button>
-            </div>
-          </form>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Find a repository...">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
 
           <ul class="nav navbar-nav" id="repotabli">
             <li><a href="#">All</a></li>
-            <li><a href="#">Public</a></li>
-            <li><a href="#">Private</a></li>
             <li><a href="#">Sources</a></li>
             <li><a href="#">Forks</a></li>
             <li><a href="#">Mirrors</a></li>
           </ul>
+    <div>
+         <button type="submit" class="btn btn-default new"><span class="octicon octicon-person"></span></span>follow</button>  
+     </div>
+</div>
+
+</div>
+
+<section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList list-unstyled">
+                  <a href="https://github.com/mema82/TIY-Assignments"><li><h3>TIY-Assignments</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/Surf-and-Paddle"><li><h3>Surf-and-Paddle</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/SandboxBootStrap"><li><h3>SandboxBootStrap</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/mema82.github.io"><li><h3>mema82.github.io</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/javascript"><li><h3>javascript</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/FEE--2014--FALL"><li><h3>FEE--2014--FALL</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/emojify.js"><li><h3>emojify.js</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/sandbox"><li><h3>Sandbox</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/engine"><li><h3>engine</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/hpstr-jekyll-theme"><li><h3>hpstr-jekyll-theme</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/javascript-koans"><li><h3>javascript-koans</h3></li></a>
+                </ul>
+              </section>
+            </section>
+
     
-         <button type="submit" class="btn btn-default new"><span class="octicon octicon-repo"></span>New</button>
-</div>
-
-</div>
-
-
-
 <!-- END "Repositories" Tab down content-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -355,20 +368,19 @@ margin-top: -42px;
 </div>
 
 -->
+</div>
 
-
-
+<hr>
+<footer>
+<ul class="site-footer-links">
+      <li>© 2014 <span title="0.10425s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
         
-  
-
-
-
-
-
-
-
-
-
+ </footer>
 
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
