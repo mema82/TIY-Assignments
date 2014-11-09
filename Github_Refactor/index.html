@@ -19,10 +19,6 @@
 
 <style>
 
-body >.container > * {
-	outline: 1pt solid red;
-}
-
 
 .stalk {
 	list-style-type: none;
@@ -103,8 +99,6 @@ background-color: #60b044;
 .sign-up {
 
 	background-color: #5ca941;
-
-
 }
 
 .btn{
@@ -156,7 +150,7 @@ margin-top: -38px;
 
 .info > li {
        display: list-item;
-            }
+     }
 
 </style>
 
@@ -164,10 +158,7 @@ margin-top: -38px;
 <body>
 
 <!--Start Navigation Bar and Elements-->
-<div class="container">
-<header class ="row">
-
-      <div class="container">
+<header class="container">
         <nav class="navbar navbar-default">
 
 <a class="navbar-brand" href="#"><span class="mega-octicon octicon-logo-github"></span></a>
@@ -183,16 +174,16 @@ margin-top: -38px;
             <li><a href="#">Blog</a></li>
           </ul>
     
-         <button type="submit" class="btn btn-default sign-up">Sign Up</button>
          <button type="submit" class="btn btn-default sign-in">Sign In</button>
+         <button type="submit" class="btn btn-default sign-up">Sign Up</button>
          </div>
       
 </nav>
 </header>
 <!--END Navigation Bar and Elements-->
 
-<!--START ASIDE-->
 
+<!--START ASIDE-->
   <div class="container content">
         <div class="container">
           <aside class="col-sm-3 col-md-3">
@@ -220,10 +211,9 @@ margin-top: -38px;
 
 
 <!--START Tabbed Navigation 3x-->
+       
+<section class="col-sm-8 col-md-8">
 
-<section class="col-sm-9 col-md-9">
-
-<!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
 
     <li role="presentation" class="active"><a href="#Contributions" role="tab" data-toggle="tab"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
@@ -236,15 +226,16 @@ margin-top: -38px;
 
 <!--END Tabbed Navigation 3x-->
 
-<!-- START "Contributions" Tab down content-->
 
+<!-- START "Contributions" Tab down content-->
+<section class="col-sm-12 col-md-12">        
 
 <div class="tab-content">
 
     <div role="tabpanel" class="tab-pane active" id="Contributions">
 
  <ul>
-
+    
    <h5>Popular repositories</h5>
 
    <li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>emojify.js</li></a>
@@ -276,8 +267,9 @@ margin-top: -38px;
 
 </ul>
 
-   <section class="col-sm-4 col-md-8">
-	<h5>Repositories contributed to</h5>
+
+ <section class="col-sm-12 col-md-6">  
+   <h5>Repositories contributed to</h5>
 
 <ul>
    <li><span class="octicon octicon-repo"></span><a href="https://github.com/TheIronYard--Orlando/FEE--2014--FALL"<li>TheIronYard--/FEE--2014--FALL</li></a>
@@ -289,11 +281,6 @@ margin-top: -38px;
 
 </ul>
  </div>
-
-
-
-
-
 
 <!-- END "Contributions" Tab down content-->
 
@@ -330,7 +317,7 @@ margin-top: -38px;
 
 <section id="repos">
               <section class="listOfRepos col-sm-12 col-md-12">
-                <ul class="repoList list-unstyled">
+                <ul class="repoList">
                   <a href="https://github.com/mema82/TIY-Assignments"><li><h3>TIY-Assignments</h3></li></a>
                   <hr>
                   <a href="https://github.com/mema82/Surf-and-Paddle"><li><h3>Surf-and-Paddle</h3></li></a>
@@ -355,8 +342,6 @@ margin-top: -38px;
                 </ul>
               </section>
             </section>
-
-    
 <!-- END "Repositories" Tab down content-->
 
 
