@@ -8,7 +8,12 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -118,6 +123,28 @@ background-color: #60b044;
       margin-right:15px;
 }
 
+
+ul {
+
+	list-style-type: none;
+}
+
+.new {
+
+background-color: #60b044;
+margin-top: -42px;
+}
+
+ .reposearch{
+
+	background-color: #eee ;
+}
+
+#repotabli {
+
+
+}
+
 </style>
 
 
@@ -190,24 +217,163 @@ background-color: #60b044;
 
 <!--END ASIDE-->
 
-<!--START Repo Tabs-->
 
+<!--START Tabbed Navigation 3x-->
 
 <section class="col-sm-8 col-md-8">
 
+<!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
 
-  <li role="presentation" class="active"><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+    <li role="presentation" class="active"><a href="#Contributions" role="tab" data-toggle="tab"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
 
-  <li role="presentation"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+    <li role="presentation"><a href="#Repositories" role="tab" data-toggle="tab"><span class="octicon octicon-repo"></span>Repositories</a></li>
 
-  <li role="presentation"><a href="#"><span class="octicon octicon-rss">Public activity</a></li>
+    <li role="presentation"><a href="#Public activity" role="tab" data-toggle="tab"><span class="octicon octicon-rss"></span>Public activity</a></li>
+
 </ul>
 
-<!--END Repo Tabs-->
+<!--END Tabbed Navigation 3x-->
+
+<!-- START "Contributions" Tab down content-->
+
+
+<div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="Contributions">
+
+ <ul>
+
+   <h5>Popular repositories</h5>
+
+   <li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>emojify.js</li></a>
+    <byline>A Javascript module to convert Emoji keywords to images</byline>
+</ul>
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>engine</li></a>
+    <byline>The Handbook for the Front End Engineering class of the Fall 2014 cohort at The Iron Yard, Orlando Campus</byline>
+
+</ul>
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>FEE--2014--FALL</li></a>
+    <byline>3D WebGL game engine with online toolset.</byline>
+
+</ul>
+
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>hpstr-jekyll-theme</li></a>
+    <byline>A Jekyll theme with some tumble-log tendencies.</byline>
+
+</ul>
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/javascript"<li>javascript</li></a>
+    <byline>JavaScript Style Guide</byline>
+
+</ul>
+
+
+    </div>
+
+<!-- END "Contributions" Tab down content-->
+
+<!-- START "Repositories" Tab down content-->
+
+ <div role="tabpanel" class="tab-pane"
+    id="Repositories">
+ <nav class="navbar navbar-default">
+
+<a class="navbar-brand" href="#"></a>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+          <input type="text" class="form-control search" placeholder="Find a repository">
+
+           <button type="submit" class="btn btn-default reposearch"></span>Search</button>
+            </div>
+          </form>
+
+          <ul class="nav navbar-nav" id="repotabli">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Public</a></li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">Forks</a></li>
+            <li><a href="#">Mirrors</a></li>
+          </ul>
+    
+         <button type="submit" class="btn btn-default new"><span class="octicon octicon-repo"></span>New</button>
+</div>
+
+</div>
+
+
+
+<!-- END "Repositories" Tab down content-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
+
+     <div role="tabpanel" class="tab-pane" id="Public activity">Public activity tab content goes here</div>
+
+</div>
+
+-->
+
+
+
+        
+  
+
+
+
+
+
+
+
+
+
+
+
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
+<!--What David did iin class... figure it out later :/
 <script>
 ;(function() {
 
@@ -229,7 +395,7 @@ background-color: #60b044;
 	});
 	
 }) ();
-
+-->
 </script>
 
 </body>
