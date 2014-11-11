@@ -90,6 +90,7 @@ aside {
 }
   .popular hr, .contrib2 hr, #conActivity hr {
   margin-bottom: 2ex;
+
 }
 #conActivity {
   margin-top: 30px;
@@ -221,13 +222,13 @@ aside {
           <aside class="col-sm-3 col-md-3">
             <a href="https://avatars3.githubusercontent.com/u/8843789?v=3&s=460"><img id="avatar" src="" alt=""></a>
               <ul class="userInfo">
-                <li><h3 id="name"></h3>
-                <li><h4 id="user"></h4>
+                <li><h3 id="name">{{name}}</h3>
+                <li><h4 id="user">{{user name}}</h4>
                 <hr>
-                <li><span id="company" class="octicon octicon-organization"></span>
-                <li><span id="location" class="octicon octicon-location"></span>
-                <li><span class="octicon octicon-mail"></span><a id="email" href=" "></a>
-                <li><span class="octicon octicon-link"></span><a id="link" href=""></a>
+                <li><span id="company" class="octicon octicon-organization">{{company}}</span>
+                <li><span id="location" class="octicon octicon-location">{{location}}</span>
+                <li><span class="octicon octicon-mail">{{email}}</span><a id="email" href=" "></a>
+                <li><span class="octicon octicon-link">{{created}}</span><a id="link" href=""></a>
                 <li><span id="created" class="octicon octicon-clock"></span></li>
                 <hr>
             <ul id="klout">
@@ -250,11 +251,11 @@ aside {
             <nav>
               <ul class="nav nav-tabs" role="tablist" class="col-sm-6 col-md-6">
 
-              <li role="presentation" class="active"><a href="#contributions" role="tab" data-toggle="tab">Contributions</a></li>
+              <li rel="panel1" role="presentation" class="active"><a href="#contributions" role="tab" data-toggle="tab">Contributions</a></li>
 
-              <li role="presentation"><a href="#repositories" role="tab" data-toggle="tab">Repositories</a></li>
+              <li rel="panel2" role="presentation"><a href="#repositories" role="tab" data-toggle="tab">Repositories</a></li>
 
-              <li role="presentation"><a href="#public activity" role="tab" data-toggle="tab">Public activity</a></li>
+              <li rel="panel3" role="presentation"><a href="#public activity" role="tab" data-toggle="tab">Public activity</a></li>
               </ul>
             </nav>
         </section>
@@ -268,7 +269,7 @@ aside {
                 <hr>
                 <ul class="popRepos list-unstyled">
                   <li id="r1" class="octicon octicon-repo-forked"><a class="repo1" href=""></a>
-                      <small> </li>
+                      <small></li>
                   <hr>
                   <li class="octicon octicon-repo-forked"><a class="repo2"href=""></a></li>
                   <hr>
@@ -383,6 +384,54 @@ aside {
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="scripts.js"></script>
+
+
+<script>
+
+    $(function() {
+
+$('.nav').on('click', function() {
+
+//figure out which panel to show
+var panelToShow = $(this).attr('rel');
+
+//hide current panel
+$('.navBar.active').hide,function() {
+
+    $(this).removeClass('active');
+
+        $('#'+panelToShow).show, function() {
+
+          $(this).addClass('active');
+
+            });
+         });
+     });
+ });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
