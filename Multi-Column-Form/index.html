@@ -4,14 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="styles.css" rel="stylesheet">
    
     <style>
+body {
 
+  background-color: #47a3da;
+  text-transform: uppercase;
+  color:white;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
 textarea {
 
-    width:300px;
+    width:100%;
     height:150px;
+    background-color: transparent;
+    border: 3px solid white;
+  
+}
+
+button {
+  background-color: #10689a;
+  border: none;
+  color:white;
+ float:center;
+}
+
+.form-control {
+  border: 2px solid white;
+  background-color: transparent;
+
+
+}
+
+select {
+
+background-color: transparent;
+
 }
 
     </style>
@@ -103,10 +133,26 @@ textarea {
 
 <form role="form">
   <div class="form-group">
-    <label for="Favorite Drink">Favorite Drink</label>
+    <label for="Favorite Drink">Favorite Drink</label><br>
     <input type="Favorite Drink" class="form-control" id="Favorite Drink" placeholder="Powerade Zero">
   </div>
 
+  <form role="form">
+  <div class="form-group">
+    <label for="Special Power">Special Power</label><br>
+    <input type="Special Power" class="form-control" id="Special Power" placeholder="Mind Reading">
+  </div>
+
+  <form role="form">
+  <div class="form-group">
+    <label for="Weapon of Choice">Weapon of Choice</label><br>
+    <input type="Weapon of Choice" class="form-control" id="Weapon of Choice" placeholder="My Brain">
+  </div>
+
+          <p>Comments</p>
+            <textarea></textarea><br>
+
+            <button>SEND YOUR DATA</button>
 
 </div>
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
