@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>PG Icon Hovers</title>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<style>
+  ul {
+    padding: 0;
+    margin:0;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  .sizes {
+    width: 50px;
+    height: 50px;
+    outline: red solid 1px;
+  }
+
+  .sizes li {
+    background: url('tshirt.png') center center no-repeat;
+    width:100%;
+    height: 100%;
+    background-color: lightblue;
+    outline: green solid 1px;
+  }
+
+  span {
+    font-size: 12px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    text-align: center;
+    text-indent: 0;
+  }
+
+span:hover {
+  color: #0968a1;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+  span[data-size="XL"] {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+
+  span[data-size="L"] {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  span[data-size="M"] {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+  }
+
+  span[data-size="S"] {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: red;
+    outline: red 1px solid;
+  }
+
+</style>
+<body>
+
+  <ul class="sizes">
+    <li><span data-size="XL">XL</span></li>
+    <li><span data-size="L">L</span></li>
+    <li><span data-size="M">M</span></li>
+    <li><span data-size="S">S</span></li>
+  </ul>
+
+</body>
+</html>
