@@ -1,1 +1,76 @@
-<!--Image Slider-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<title>Image Slider</title>
+</head>
+
+<body>
+
+<div id = "imgSlide"></div>
+
+<a href="#" id="prev_btn">&laquo;</a>
+<a href="#" id="prev_btn">&raquo;</a>
+
+
+
+<!--Bringing in Template. Added an ID-->
+<script id="tmp" type="text/template"></script>
+
+<!--Name of obj on JSON file goes with #-->
+<!--This will apply JSON info into this Template-->
+
+{{#name}}
+<div class="pic">
+	<img src="images/{{location}}_tn.jpg alt="photos of {{category}}"/>
+</div>
+{{/name}}
+
+
+
+
+<!--JQUERY Lib-->
+<script type="text/javascript" "//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--JQUERY CYCLE-->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>"
+
+<!--Mustache.js Lib-->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+
+<script>
+$(function() {
+	
+	$.getJSON('data.json', function(data) {
+		var template = $)'#tmp').html();
+
+/*This processes the data and feeds it into the template to create an html. Then takes the html and feeds it into a div*/
+	var html = Mustache.to_html(template, data);
+
+/*Modifies the html in the #div to the html recieved from the mustache divs*/
+	$('#imgSlide').html(html);
+
+/*Adding the JQ Cycle*/
+
+$('#imgSlide').cycle({ 
+
+fx: 'fade',
+pause: 1,
+next: '#next_btn',
+prev: '#prev_btn',
+speed: 500,
+timeout: 10000
+
+});
+
+});//getJSON
+  
+});//function
+
+
+</script>
+
+
+</body>
+</html>
