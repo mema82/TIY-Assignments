@@ -1,0 +1,88 @@
+html, body {
+  font-size: 14pt;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; padding: 0;
+  color: inherit;
+}
+h3 {
+  color: #999;
+
+}
+
+ul {
+  margin: 0; padding: 0;
+  list-style-type: none;
+
+}
+li {
+  padding: .5ex 0;
+}
+
+ul.menu > li {
+  margin: 0;
+  padding: 2ex 0; padding-left: 3em;
+  border-bottom: 2pt solid #47a3da;
+
+}
+
+ul.menu h4 {
+  font-size: 130%;
+  line-height: 3ex;
+  font-weight: normal;
+  color: #47a3da;
+
+}
+
+ul.menu ul {
+  margin: 1ex 0;
+
+}
+
+
+.open {
+  
+  color: #47a3da;
+
+
+}
+
+.open h3 {
+  color: white;
+  margin-bottom: 3ex;
+
+
+ 
+}
+
+li.open {
+
+	border-bottom: 4px solid #47a3da;
+
+
+}
+
+h3 a {
+
+	text-decoration: none;
+	color:grey;
+
+}
+
+h3 a:hover {
+	color: #47a3da;
+}
+
+
+.submenu li a{
+
+	 text-decoration: none;
+
+}
+
+
+
+
+
+
+
