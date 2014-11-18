@@ -54,15 +54,20 @@ function
 * <h1 ng-show="name">Hello, name in {{ }}!
 
 
-Other helpful vocab
-```
-Directives- HTML annotations that trigger JS behaviors
-Modules- Where our application componenets live
-Controllers- Where we add application behavior
-Expresions- How values get displayed within the page
+#Other helpful vocab
 
-Expression examples
-Filters
+```
+Directives- 
+* HTML annotations that trigger JS behaviors
+* Modules- Where our application componenets live
+* Controllers- Where we add application behavior
+* Expresions- How values get displayed within the page
+```
+
+#Expression examples
+
+```
+	Filters
 
 Dates
 Uppercase/Lowercase
