@@ -1,7 +1,6 @@
-```
-Document the following parts of the framework; include the arguments, the return value, and an example of each in use:
-```
+##Document the following parts of the framework; include the arguments, the return value, and an example of each in use:
 
+```
 function
 
 1. angular.module -- returns an instance of type angular.Module, which you should also document
@@ -13,11 +12,14 @@ function
 4. angular.element
 
 ```
-directive -- keep in mind that some directives can only be used on specific HTML elements!
+
+
+##directive -- keep in mind that some directives can only be used on specific HTML elements!
+
 ```
 1. ngApp - How the application module attaches to the page
 
-* <html ng-app="store">
+* <html ng-app="store"
 
 2. ngBind
 
@@ -37,7 +39,7 @@ directive -- keep in mind that some directives can only be used on specific HTML
 
 9. ngModel- binds the form element value to the property
 
-* <select ng-model="review.stars">
+* <select ng-model="review.stars"
 
 10. ngRepeat- Repeat a section for each itmem in an array
 
@@ -49,10 +51,9 @@ directive -- keep in mind that some directives can only be used on specific HTML
 
 12. ng-show/ng-hide - Displays a section based on expression
 
-* <h1 ng-show="name">Hello, {{name}}!</h1>
+* <h1 ng-show="name">Hello, name in {{ }}!
 
 
-```
 Other helpful vocab
 ```
 Directives- HTML annotations that trigger JS behaviors
@@ -68,6 +69,6 @@ Uppercase/Lowercase
 Time
 LimitTo
 orderBy
-
+```
 
 
