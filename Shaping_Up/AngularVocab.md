@@ -52,7 +52,7 @@ function
 12. ng-show/ng-hide - Displays a section based on expression
 
 * <h1 ng-show="name">Hello, name in {{ }}!
-
+```
 
 #Other helpful vocab
 
