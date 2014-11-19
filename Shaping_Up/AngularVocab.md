@@ -135,17 +135,18 @@ Custom Directives can also be used for:
 
 Element Directives- Use for UI widgets
 
-* <product-title> </product-title>
+* <product-titl  </product-title>
 
 
 Attribute Directive- Use for mixin behaviors...like a tooltip.
 
-* <h3 product-title> </h3>
+* h3 product-title> /h3>
 ```
 
+```
 #Expression examples
 
-```
+
 	Filters
 
 Dates
