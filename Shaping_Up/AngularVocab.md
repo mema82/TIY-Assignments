@@ -68,7 +68,48 @@ function
 12. ng-show/ng-hide - Displays a section based on expression
 
 * <h1 ng-show="name">Hello, name in {{ }}!
+
+13. form- represents an instance of a controller
+
+14. input(all variants)- HTML input element control. When used together with ngModel, it provides data-binding, input state control, and validation. 
+
+15.textarea- HTML textarea element control with angular data-binding. The data-binding and validation properties of this element are exactly the same as those of the input elements.
+
+* <textarea
+  ng-model=""
+  [name=""]
+  [required=""]
+  [ng-required=""]
+</textarea>
+
+16. ngBlur- Allows custom behavior on blur event. Fires when an element has lost focus.
+
+* <window, input, select, textarea, a
+  ng-blur="">
+
+17. ngChange- Evaluate the given expression when the user changes the input.
+
+* <div ng-controller="ExampleController">
+  <input type="checkbox" ng-model="confirmed" ng-change="change()" id="ng-change-example1" />
+</div>
+
+18. ngChecked- Solve prblem of requiring browsers to preserve the value of boolean attributes. provides a permanent reliable place to store the binding information.
+
+* <input type="checkbox" ng-checked="testModel.child_1
+
+19. ngFocus- Specifies custom behavior on focus event.
+
+* ng-focus="focus=true;blur=false;
+
 ```
+##Services
+```
+  * $controller- service is responsible for instantiating controllers.
+
+  * $http- facilitates communication with the remote HTTP servers via the browser's XMLHttpReuest object or JSONP.
+
+  * $interpolate- Compiles a string with markup into an interpolation func. Used by the HTML $compile service for data binding.
+
 
 ##Other helpful vocab
 
