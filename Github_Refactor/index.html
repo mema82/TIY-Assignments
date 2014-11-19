@@ -1,0 +1,399 @@
+<!--Weekend Assignment Head Start-->
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekend HeadStart</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+
+
+.stalk {
+	list-style-type: none;
+	
+}
+
+
+.glyphicon-envelope {
+
+	padding-right: 4px;
+}
+
+.joined {
+
+margin-top:-20px;
+padding-left:15px;
+
+
+}
+
+.navbar-form .form-control{
+
+width: 350px;
+height:25px;
+}
+
+
+.menu {
+
+display: inline-block;
+margin-bottom: -15px;
+
+
+}
+
+.menu li {
+
+	float:left;
+	padding-left: 40px;
+	display: inline-block;
+	margin-right: 40px;
+
+}
+
+
+.popular {
+
+padding-left:10px;
+
+}
+
+
+.tabs {
+
+	list-style-type: none;
+	float:left;
+
+}
+
+#signin{
+
+background-color: #60b044;
+}
+
+
+.list-inline {
+
+	padding-top: 14px;
+
+}
+
+.mega-octicon {
+
+	padding-right: 20px;
+	
+}
+
+.sign-up {
+
+	background-color: #5ca941;
+}
+
+.btn{
+
+	float:right;
+}
+
+ .container {
+        margin: 0 0 0 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+      }
+
+.btn-default {
+      margin-right:15px;
+}
+
+
+ul {
+
+	list-style-type: none;
+}
+
+.new {
+
+background-color: #60b044;
+margin-top: -38px;
+}
+
+ .reposearch{
+
+	background-color: #eee ;
+}
+
+#repotabli {
+
+
+}
+
+#contrib {
+
+}
+
+.footer {
+
+	display: inline-block;
+}
+
+.info > li {
+       display: list-item;
+     }
+
+</style>
+
+
+<body>
+
+<!--Start Navigation Bar and Elements-->
+<header class="container">
+        <nav class="navbar navbar-default">
+
+<a class="navbar-brand" href="#"><span class="mega-octicon octicon-logo-github"></span></a>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+          <input type="text" class="form-control search" placeholder="Search Github">
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+    
+         <button type="submit" class="btn btn-default sign-in">Sign In</button>
+         <button type="submit" class="btn btn-default sign-up">Sign Up</button>
+         </div>
+      
+</nav>
+</header>
+<!--END Navigation Bar and Elements-->
+
+
+<!--START ASIDE-->
+  <div class="container content">
+        <div class="container">
+          <aside class="col-sm-3 col-md-3">
+            <a href="https://avatars3.githubusercontent.com/u/8843789?v=3&s=460" class="thumbnail" id="avatar"><img src="https://avatars3.githubusercontent.com/u/8843789?v=3&amp;s=460"alt=""></a>
+
+        <h3 class="name">{{name}}</h3>
+        <h4 class="user">{{login}}</h4>
+    <hr>
+    <ul class="info list-unstyled">
+      
+       <li class="email octicon octicon-mail"><a href="">{{email}}</a></li>
+
+       <li class="created octicon octicon-clock">{{created}}</li>
+            </ul>
+    <hr>
+            <p><a href="#">1 Follower</a> 
+            	<a href="">1 Starred</a> 
+            	<a href="">0 Following</a></p>
+
+    <hr>
+		
+		</aside>
+
+<!--END ASIDE-->
+
+
+<!--START Tabbed Navigation 3x-->
+       
+<section class="col-sm-8 col-md-8">
+
+<ul class="nav nav-tabs" role="tablist">
+
+    <li role="presentation" class="active"><a href="#Contributions" role="tab" data-toggle="tab"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+
+    <li role="presentation"><a href="#Repositories" role="tab" data-toggle="tab"><span class="octicon octicon-repo"></span>Repositories</a></li>
+
+    <li role="presentation"><a href="#Public activity" role="tab" data-toggle="tab"><span class="octicon octicon-rss"></span>Public activity</a></li>
+
+</ul>
+
+<!--END Tabbed Navigation 3x-->
+
+
+<!-- START "Contributions" Tab down content-->
+<section class="col-sm-12 col-md-12">        
+
+<div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="Contributions">
+
+ <ul>
+    
+   <h5>Popular repositories</h5>
+
+   <li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>emojify.js</li></a>
+    <byline>A Javascript module to convert Emoji keywords to images</byline>
+</ul>
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>engine</li></a>
+    <byline>The Handbook for the Front End Engineering class of the Fall 2014 cohort at The Iron Yard, Orlando Campus</byline>
+
+</ul>
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>FEE--2014--FALL</li></a>
+    <byline>3D WebGL game engine with online toolset.</byline>
+
+</ul>
+
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/emojify.js"<li>hpstr-jekyll-theme</li></a>
+    <byline>A Jekyll theme with some tumble-log tendencies.</byline>
+
+</ul>
+
+<ul>
+	<li><span class="repo-icon octicon octicon-repo-forked"></span><a href="https://github.com/mema82/javascript"<li>javascript</li></a>
+    <byline>JavaScript Style Guide</byline>
+
+</ul>
+
+
+ <section class="col-sm-12 col-md-6">  
+   <h5>Repositories contributed to</h5>
+
+<ul>
+   <li><span class="octicon octicon-repo"></span><a href="https://github.com/TheIronYard--Orlando/FEE--2014--FALL"<li>TheIronYard--/FEE--2014--FALL</li></a>
+    <byline>The Handbook for the Front End Engineering class of the Fall 2014 cohort at The Iron Yard, Orlando Campus</byline>
+</ul>
+
+<ul>
+	<li><span class="octicon octicon-repo"></span><a href="https://github.com/asoper29/24--Weekend-Warriors"<li>asoper29/24--Weekend-Warriors</li></a>
+
+</ul>
+ </div>
+
+<!-- END "Contributions" Tab down content-->
+
+
+
+
+
+<!-- START "Repositories" Tab down content-->
+
+ <div role="tabpanel" class="tab-pane"
+    id="Repositories">
+ <nav class="navbar navbar-default">
+
+<a class="navbar-brand" href="#"></a>
+          <form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Find a repository...">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+
+          <ul class="nav navbar-nav" id="repotabli">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">Forks</a></li>
+            <li><a href="#">Mirrors</a></li>
+          </ul>
+    <div>
+         <button type="submit" class="btn btn-default new"><span class="octicon octicon-person"></span></span>follow</button>  
+     </div>
+</div>
+
+</div>
+
+<section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList">
+                  <a href="https://github.com/mema82/TIY-Assignments"><li><h3>TIY-Assignments</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/Surf-and-Paddle"><li><h3>Surf-and-Paddle</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/SandboxBootStrap"><li><h3>SandboxBootStrap</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/mema82.github.io"><li><h3>mema82.github.io</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/javascript"><li><h3>javascript</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/FEE--2014--FALL"><li><h3>FEE--2014--FALL</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/emojify.js"><li><h3>emojify.js</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/sandbox"><li><h3>Sandbox</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/engine"><li><h3>engine</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/hpstr-jekyll-theme"><li><h3>hpstr-jekyll-theme</h3></li></a>
+                  <hr>
+                  <a href="https://github.com/mema82/javascript-koans"><li><h3>javascript-koans</h3></li></a>
+                </ul>
+              </section>
+            </section>
+<!-- END "Repositories" Tab down content-->
+
+
+
+<!--
+
+     <div role="tabpanel" class="tab-pane" id="Public activity">Public activity tab content goes here</div>
+
+</div>
+
+-->
+</div>
+
+<hr>
+<footer>
+<ul class="site-footer-links">
+      <li>© 2014 <span title="0.10425s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+        
+ </footer>
+
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!--What David did iin class... figure it out later :/
+<script>
+;(function() {
+
+	var profile;
+	jQuery.ajax('octocat.json', {
+
+		success: function(data){
+
+			console.log(data);
+
+			var avatar_url = data.avatar_url;
+
+
+			jQuery('#avater').attr('href' , avatar_url)
+			.children('img').attr('src' , avatar_url)
+		}
+
+
+	});
+	
+}) ();
+-->
+</script>
+
+</body>
+</html>

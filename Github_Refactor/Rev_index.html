@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+.container {
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+.userInfo > li {
+  list-style: none;
+}
+.userInfo {
+  padding: 0;
+}
+.content {
+  width: 971px;/*70%*/
+  margin: 0 auto 5% auto;
+}
+.center {
+  width: 971px;/*70%;*/
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.search {
+  width: 200px;
+}
+.navbar-brand {
+  color: black;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.navbar-form .form-control {
+  display: inline-block;
+  width: 345px;
+  vertical-align: middle;
+  height: 30px;
+  margin: 1% 0;
+}
+.btn {
+  margin: 1% 0;
+  font-weight: bold;
+  font-size: 8pt;
+}
+button {
+  width: 60px;
+  align-content: center;
+}
+.sign-up {
+  background-color: #73CE53;
+  color: white;
+}
+#avatar {
+  width: 220px;/*100%*/
+  border-radius: 8px;
+}
+aside {
+  margin:0;
+  padding: 0;
+}
+.name {
+  margin: 0;
+}
+.user {
+  margin: 0;
+  color: gray;
+}
+.glyphicon {
+  color: lightgray;
+}
+.orgs {
+  width: 30px;
+}
+.popular, .contrib2 {
+  margin-top: 3ex;
+  width: 48%;
+  border: 1px solid lightgray;
+  padding: 0;
+  text-indent: 1em;
+}
+.col-md-6 {
+  width: 35%;
+  margin-right: 23px;
+  margin-top: 23px;
+}
+  .popular hr, .contrib2 hr, #conActivity hr {
+  margin-bottom: 2ex;
+
+}
+#conActivity {
+  margin-top: 30px;
+  margin-left: 20.5em;
+}
+#repos, #activity {
+  display: none;
+}
+.repoList {
+  list-style-type: none;
+
+}
+.octicon:before {
+  margin-right: 1ex;
+  color: gainsboro;
+}
+.octicon-logo-github:before {
+  font-size: 20pt;
+  margin: 0;
+  color: black;
+}
+#name {
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 28px;
+}
+#user {
+  font-size: 20px;
+  margin-top: -7px;
+  font-weight: 300;
+}
+#location:before {
+  padding-right: 4px;
+}
+#graph {
+  width: 50%;
+  padding: 0;
+}
+#graph img{
+  margin-top: 4ex;
+}
+#contribmenu {
+  border-color: lightgray;
+  border-bottom-color: white;
+
+}
+#navBar {
+  padding: 0;
+}
+.listOfRepos, .listOfActive {
+  width: 75%;
+}
+.repoList>li {
+  font-size: 16pt;
+  vertical-align: center;
+}
+#r1 {
+  text-indent: 0;
+}
+.activeHead {
+  font-size: 14pt;
+  margin: -6px 0 0 -12px;
+  padding-bottom: 26px;
+  font-weight: 400;
+
+}
+#klout li {
+  display: inline;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.popular h5 {
+  padding: 10px 0;
+  margin: 0;
+  background-color: #F5F5F5;
+  border-radius: 3px;
+}
+#klout {
+  padding: 0;
+}
+#klout a {
+  font-size: 24pt;
+}
+#klout p{
+  font-size: 8pt;
+}
+#conActivity h6 {
+  text-align: center;
+  padding-top: 5ex;
+  padding-bottom: 10ex;
+}
+    </style>
+  </head>
+  <body>
+<!--START Container for Main Navigation Bar-->
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container center">
+          <a class="navbar-brand" href="#"><span class ="octicon octicon-logo-github"></span></a>
+
+<!--START of Bootstrap Form snippet-->
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+          <input type="text" class="form-control search" placeholder="Search Github">
+            </div>
+          </form>
+
+<!--END of Bootstrap Form snippet-->
+
+<!--START of list to go into Main Navigation Bar-->
+          <ul class="nav navbar-nav">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <button type="submit" class="btn btn-default sign-up">Sign Up</button>
+          <button type="submit" class="btn btn-default sign-in">Sign In</button>
+          </div>
+        </nav>
+      </div>
+<!--END Container for Main Navigation Bar-->
+
+
+
+<!--START'div' Container for Full Body Content-->
+        <div class="container">
+          <aside class="col-sm-3 col-md-3">
+            <a href="https://avatars3.githubusercontent.com/u/8843789?v=3&s=460"><img id="avatar" src="" alt=""></a>
+              <ul class="userInfo">
+                <li><h3 id="name">{{name}}</h3>
+                <li><h4 id="user">{{user name}}</h4>
+                <hr>
+                <li><span id="company" class="octicon octicon-organization">{{company}}</span>
+                <li><span id="location" class="octicon octicon-location">{{location}}</span>
+                <li><span class="octicon octicon-mail">{{email}}</span><a id="email" href=" "></a>
+                <li><span class="octicon octicon-link">{{created}}</span><a id="link" href=""></a>
+                <li><span id="created" class="octicon octicon-clock"></span></li>
+                <hr>
+            <ul id="klout">
+              <li class="col-md-4"><a id="followers"href="#"></a><br><p>Followers</p></li>
+              <li class="col-md-4"><a id="starred" href=""></a><br><p>Starred</p></li>
+              <li class="col-md-4"><a id="following" href=""></a><br><p>Following</p></li`>
+            </ul>
+
+
+            <hr>
+            <h5>Organizations</h5>
+            <a href="#"><img class="orgs img-rounded" src="" alt=""></a>
+          </aside>
+
+<!--END of ASIDE Content-->
+
+
+<!--START of  Nav Tabs-->
+        <section id="navBar" class="col-sm-9 col-md-9">
+            <nav>
+              <ul class="nav nav-tabs" role="tablist" class="col-sm-6 col-md-6">
+
+              <li rel="panel1" role="presentation" class="active"><a href="#contributions" role="tab" data-toggle="tab">Contributions</a></li>
+
+              <li rel="panel2" role="presentation"><a href="#repositories" role="tab" data-toggle="tab">Repositories</a></li>
+
+              <li rel="panel3" role="presentation"><a href="#public activity" role="tab" data-toggle="tab">Public activity</a></li>
+              </ul>
+            </nav>
+        </section>
+<!--END of  Nav Tabs-->
+
+
+<!--START of Repository Column which should be UNDER "Contributions" Tab-->
+            <section id="contrib">
+              <section class="popular col-sm-6 col-md-6">
+                <h5 class="blockHead">Popular repositories</h5>
+                <hr>
+                <ul class="popRepos list-unstyled">
+                  <li id="r1" class="octicon octicon-repo-forked"><a class="repo1" href=""></a>
+                      <small></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a class="repo2"href=""></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a  class="repo3" href=""></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a class="repo4" href=""></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a class="repo5" href=""></a></li>
+                </ul>
+              </section>
+
+<!--END of Repository Column which should be UNDER "Contributions" Tab-->
+
+
+<!--START of "Repositories Contributed to" Column which should be UNDER "Contributions" Tab-->
+              <section class="popular contrib2 col-sm-6 col-md-6">
+                <h5 class="blockHead">Repositories contributed to</h5>
+                <hr>
+                <ul class="reposCon2 list-unstyled">
+                  <li class="octicon octicon-repo" style="text-indent: 0;"><a href="#"></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#"></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#"></a></li>
+                </ul>
+              </section>
+
+<!--END of "Repositories Contributed to" Column which should be UNDER "Contributions" Tab-->
+
+
+<!--START of Contribution Activity which should be UNDER "Contributions" Tab-->
+            <!--START of Graph-->
+            <section id="contrib-stat">
+              <section id="graph" class="pubCon col-sm-9 col-md-9">
+
+
+               
+              </section>
+              <!--END of Graph-->
+
+              <!--START of Contribution Activity List-->
+              <section id="conActivity" class="col-sm-9 col-md-">
+                <h5 class="activeHead">Contribution activity</h5>
+                <hr>
+                <h6><span class="octicon octicon-git-commit">12 Commits</span></h6>
+                <hr>
+                <h6><span class="octicon octicon-git-pull-request">3 Pull Requests</span></h6>
+              </section>
+               <!--END of Contribution Activity List-->
+
+            </section>
+
+          </section>
+<!--END of Contribution Activity which should be UNDER "Contributions" Tab-->
+
+
+<!--START of Repository Column which should be UNDER "Repository" Tab-->
+            <section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList">
+                  <li><a class="repo1" href="#"></a>
+                  <hr>
+                  <li><a class="repo2"href="#"></a>
+                  <hr>
+                  <li><a class="repo3"href="#"></a>
+                  <hr>
+                  <li><a class="repo4" href="#"></a>
+                  <hr>
+                  <li><a class="repo5" href="#"></a>
+                  <hr>
+                  <li><a class="repo6" href="#"></a>
+                  <hr>
+                  <li><a class="repo7" href="#"></a>
+                  <hr>
+                  <li><a class="repo8" href="#"></a>
+                  <hr>
+                  <li><a class="repo9" href="#"></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+<!--END of Repository Column which should be UNDER "Repository" Tab-->
+
+<!--START of Public Activity which should be UNDER "Public Activity" Tab-->
+            <section id="activity">
+              <section class="listOfActive col-sm-12 col-md-12">
+                <ul class="activeList">
+                  <a href="#"><li><h3>activity_1</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_2</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_3</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_4</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_5</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_6</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_7</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>activity_8</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+<!--END of Public Activity which should be UNDER "Public Activity" Tab-->
+          </section>
+      </div>
+<!--END 'div' Container for Full Body Content-->   
+
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+<script>
+
+    $(function() {
+
+$('.nav').on('click', function() {
+
+//figure out which panel to show
+var panelToShow = $(this).attr('rel');
+
+//hide current panel
+$('.navBar.active').hide,function() {
+
+    $(this).removeClass('active');
+
+        $('#'+panelToShow).show, function() {
+
+          $(this).addClass('active');
+
+            });
+         });
+     });
+ });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
