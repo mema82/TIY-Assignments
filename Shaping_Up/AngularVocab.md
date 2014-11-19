@@ -109,7 +109,7 @@ function
   * $http- facilitates communication with the remote HTTP servers via the browser's XMLHttpReuest object or JSONP.
 
   * $interpolate- Compiles a string with markup into an interpolation func. Used by the HTML $compile service for data binding.
-
+```
 
 ##Other helpful vocab
 
@@ -120,8 +120,7 @@ Directives-Why?Allows you to write HTML that expresses that behavior of your app
 * Modules- Where our application componenets live
 * Controllers- Where we add application behavior
 * Expresions- How values get displayed within the page
-```
-```
+
 Template-expanding Directives (simplest):
 
 * Define a custom tag or attr that is expanded or replaced.
@@ -143,10 +142,9 @@ Attribute Directive- Use for mixin behaviors...like a tooltip.
 * h3 product-title> /h3>
 ```
 
-```
 #Expression examples
 
-
+```
 	Filters
 
 Dates
