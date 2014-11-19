@@ -1,0 +1,19 @@
+ //3 examples of each verb being used in the Github API
+
+<p>1. GET:Used for retrieving resources.</br>
+
+i.e curl https://api.github.com/users/mema82</p>
+
+<hr>
+
+<p>2. POST:Used for creating resources, or performing custom actions (such as merging a pull request)<br>
+
+i.e curl --user "mema82" --request POST --data </p>
+
+<hr>
+
+<p>3. PUT:Used for replacing resources or collections. For PUT requests with no body attribute, be sure to set the Content-Length header to zero.<br>
+
+
+i.e curl --user "mema82" -X POST --data '{"description":"Created via API","public":"true","files":{"file1.txt":{"content":"Demo"}}' https://api.github.com/gists</p>
+
